@@ -1,0 +1,16 @@
+{
+  "queryType": "select",
+  "dataSource": "player_explorer_s3",
+  "dimensions": [
+    "deviceType"
+  ],
+  "metrics": [],
+  "granularity": "all",
+  "intervals": [
+    "2017-08-01/2017-08-15"
+  ],
+  "pagingSpec": {
+    "pagingIdentifiers": {},
+    "threshold": 100
+  }
+}

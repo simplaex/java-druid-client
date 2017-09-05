@@ -1,0 +1,1322 @@
+[
+  {
+    "timestamp": "2017-08-01T00:00:00.000Z",
+    "result": {
+      "pagingIdentifiers": {
+        "player_explorer_s3_2017-08-01T00:00:00.000Z_2017-08-02T00:00:00.000Z_2017-08-14T09:30:49.933Z": 99
+      },
+      "dimensions": [
+        "deviceType"
+      ],
+      "metrics": [
+        "sessionCount",
+        "count",
+        "paidAmountSum",
+        "activeDaysSum",
+        "paymentCount"
+      ],
+      "events": [
+        {
+          "segmentId": "player_explorer_s3_2017-08-01T00:00:00.000Z_2017-08-02T00:00:00.000Z_2017-08-14T09:30:49.933Z",
+          "offset": 0,
+          "event": {
+            "timestamp": "2017-08-01T00:00:00.000Z",
+            "deviceType": "Smartphone ",
+            "sessionCount": 0,
+            "count": 1,
+            "paidAmountSum": 0.0,
+            "activeDaysSum": 0,
+            "paymentCount": 0
+          }
+        },
+        {
+          "segmentId": "player_explorer_s3_2017-08-01T00:00:00.000Z_2017-08-02T00:00:00.000Z_2017-08-14T09:30:49.933Z",
+          "offset": 1,
+          "event": {
+            "timestamp": "2017-08-01T00:00:00.000Z",
+            "deviceType": "Smart-TV",
+            "sessionCount": 0,
+            "count": 1,
+            "paidAmountSum": 0.0,
+            "activeDaysSum": 0,
+            "paymentCount": 0
+          }
+        },
+        {
+          "segmentId": "player_explorer_s3_2017-08-01T00:00:00.000Z_2017-08-02T00:00:00.000Z_2017-08-14T09:30:49.933Z",
+          "offset": 2,
+          "event": {
+            "timestamp": "2017-08-01T00:00:00.000Z",
+            "deviceType": "Smart-TV",
+            "sessionCount": 0,
+            "count": 1,
+            "paidAmountSum": 0.0,
+            "activeDaysSum": 0,
+            "paymentCount": 0
+          }
+        },
+        {
+          "segmentId": "player_explorer_s3_2017-08-01T00:00:00.000Z_2017-08-02T00:00:00.000Z_2017-08-14T09:30:49.933Z",
+          "offset": 3,
+          "event": {
+            "timestamp": "2017-08-01T00:00:00.000Z",
+            "deviceType": "Robot",
+            "sessionCount": 3,
+            "count": 1,
+            "paidAmountSum": 0.0,
+            "activeDaysSum": 0,
+            "paymentCount": 0
+          }
+        },
+        {
+          "segmentId": "player_explorer_s3_2017-08-01T00:00:00.000Z_2017-08-02T00:00:00.000Z_2017-08-14T09:30:49.933Z",
+          "offset": 4,
+          "event": {
+            "timestamp": "2017-08-01T00:00:00.000Z",
+            "deviceType": "Robot",
+            "sessionCount": 2,
+            "count": 1,
+            "paidAmountSum": 0.0,
+            "activeDaysSum": 0,
+            "paymentCount": 0
+          }
+        },
+        {
+          "segmentId": "player_explorer_s3_2017-08-01T00:00:00.000Z_2017-08-02T00:00:00.000Z_2017-08-14T09:30:49.933Z",
+          "offset": 5,
+          "event": {
+            "timestamp": "2017-08-01T00:00:00.000Z",
+            "deviceType": "Other",
+            "sessionCount": 4,
+            "count": 1,
+            "paidAmountSum": 0.0,
+            "activeDaysSum": 0,
+            "paymentCount": 0
+          }
+        },
+        {
+          "segmentId": "player_explorer_s3_2017-08-01T00:00:00.000Z_2017-08-02T00:00:00.000Z_2017-08-14T09:30:49.933Z",
+          "offset": 6,
+          "event": {
+            "timestamp": "2017-08-01T00:00:00.000Z",
+            "deviceType": "Feature Phone",
+            "sessionCount": 8,
+            "count": 1,
+            "paidAmountSum": 0.0,
+            "activeDaysSum": 0,
+            "paymentCount": 0
+          }
+        },
+        {
+          "segmentId": "player_explorer_s3_2017-08-01T00:00:00.000Z_2017-08-02T00:00:00.000Z_2017-08-14T09:30:49.933Z",
+          "offset": 7,
+          "event": {
+            "timestamp": "2017-08-01T00:00:00.000Z",
+            "deviceType": "Tablet",
+            "sessionCount": 4,
+            "count": 1,
+            "paidAmountSum": 0.0,
+            "activeDaysSum": 0,
+            "paymentCount": 0
+          }
+        },
+        {
+          "segmentId": "player_explorer_s3_2017-08-01T00:00:00.000Z_2017-08-02T00:00:00.000Z_2017-08-14T09:30:49.933Z",
+          "offset": 8,
+          "event": {
+            "timestamp": "2017-08-01T00:00:00.000Z",
+            "deviceType": "Desktop",
+            "sessionCount": 6,
+            "count": 1,
+            "paidAmountSum": 0.0,
+            "activeDaysSum": 0,
+            "paymentCount": 0
+          }
+        },
+        {
+          "segmentId": "player_explorer_s3_2017-08-01T00:00:00.000Z_2017-08-02T00:00:00.000Z_2017-08-14T09:30:49.933Z",
+          "offset": 9,
+          "event": {
+            "timestamp": "2017-08-01T00:00:00.000Z",
+            "deviceType": "Robot",
+            "sessionCount": 8,
+            "count": 1,
+            "paidAmountSum": 0.0,
+            "activeDaysSum": 0,
+            "paymentCount": 0
+          }
+        },
+        {
+          "segmentId": "player_explorer_s3_2017-08-01T00:00:00.000Z_2017-08-02T00:00:00.000Z_2017-08-14T09:30:49.933Z",
+          "offset": 10,
+          "event": {
+            "timestamp": "2017-08-01T00:00:00.000Z",
+            "deviceType": "Smartphone",
+            "sessionCount": 9,
+            "count": 1,
+            "paidAmountSum": 0.0,
+            "activeDaysSum": 0,
+            "paymentCount": 0
+          }
+        },
+        {
+          "segmentId": "player_explorer_s3_2017-08-01T00:00:00.000Z_2017-08-02T00:00:00.000Z_2017-08-14T09:30:49.933Z",
+          "offset": 11,
+          "event": {
+            "timestamp": "2017-08-01T00:00:00.000Z",
+            "deviceType": "Smartphone ",
+            "sessionCount": 9,
+            "count": 1,
+            "paidAmountSum": 0.0,
+            "activeDaysSum": 0,
+            "paymentCount": 0
+          }
+        },
+        {
+          "segmentId": "player_explorer_s3_2017-08-01T00:00:00.000Z_2017-08-02T00:00:00.000Z_2017-08-14T09:30:49.933Z",
+          "offset": 12,
+          "event": {
+            "timestamp": "2017-08-01T00:00:00.000Z",
+            "deviceType": "Smart-TV",
+            "sessionCount": 2,
+            "count": 1,
+            "paidAmountSum": 0.0,
+            "activeDaysSum": 0,
+            "paymentCount": 0
+          }
+        },
+        {
+          "segmentId": "player_explorer_s3_2017-08-01T00:00:00.000Z_2017-08-02T00:00:00.000Z_2017-08-14T09:30:49.933Z",
+          "offset": 13,
+          "event": {
+            "timestamp": "2017-08-01T00:00:00.000Z",
+            "deviceType": "Robot",
+            "sessionCount": 2,
+            "count": 1,
+            "paidAmountSum": 0.0,
+            "activeDaysSum": 0,
+            "paymentCount": 0
+          }
+        },
+        {
+          "segmentId": "player_explorer_s3_2017-08-01T00:00:00.000Z_2017-08-02T00:00:00.000Z_2017-08-14T09:30:49.933Z",
+          "offset": 14,
+          "event": {
+            "timestamp": "2017-08-01T00:00:00.000Z",
+            "deviceType": "Smartphone",
+            "sessionCount": 67,
+            "count": 1,
+            "paidAmountSum": 0.0,
+            "activeDaysSum": 0,
+            "paymentCount": 0
+          }
+        },
+        {
+          "segmentId": "player_explorer_s3_2017-08-01T00:00:00.000Z_2017-08-02T00:00:00.000Z_2017-08-14T09:30:49.933Z",
+          "offset": 15,
+          "event": {
+            "timestamp": "2017-08-01T00:00:00.000Z",
+            "deviceType": "Feature Phone",
+            "sessionCount": 76,
+            "count": 1,
+            "paidAmountSum": 0.0,
+            "activeDaysSum": 0,
+            "paymentCount": 0
+          }
+        },
+        {
+          "segmentId": "player_explorer_s3_2017-08-01T00:00:00.000Z_2017-08-02T00:00:00.000Z_2017-08-14T09:30:49.933Z",
+          "offset": 16,
+          "event": {
+            "timestamp": "2017-08-01T00:00:00.000Z",
+            "deviceType": "Smartphone ",
+            "sessionCount": 69,
+            "count": 1,
+            "paidAmountSum": 0.0,
+            "activeDaysSum": 0,
+            "paymentCount": 0
+          }
+        },
+        {
+          "segmentId": "player_explorer_s3_2017-08-01T00:00:00.000Z_2017-08-02T00:00:00.000Z_2017-08-14T09:30:49.933Z",
+          "offset": 17,
+          "event": {
+            "timestamp": "2017-08-01T00:00:00.000Z",
+            "deviceType": "Smart-TV",
+            "sessionCount": 95,
+            "count": 1,
+            "paidAmountSum": 0.0,
+            "activeDaysSum": 0,
+            "paymentCount": 0
+          }
+        },
+        {
+          "segmentId": "player_explorer_s3_2017-08-01T00:00:00.000Z_2017-08-02T00:00:00.000Z_2017-08-14T09:30:49.933Z",
+          "offset": 18,
+          "event": {
+            "timestamp": "2017-08-01T00:00:00.000Z",
+            "deviceType": "Desktop",
+            "sessionCount": 55,
+            "count": 1,
+            "paidAmountSum": 0.0,
+            "activeDaysSum": 0,
+            "paymentCount": 0
+          }
+        },
+        {
+          "segmentId": "player_explorer_s3_2017-08-01T00:00:00.000Z_2017-08-02T00:00:00.000Z_2017-08-14T09:30:49.933Z",
+          "offset": 19,
+          "event": {
+            "timestamp": "2017-08-01T00:00:00.000Z",
+            "deviceType": "Smartphone",
+            "sessionCount": 90,
+            "count": 1,
+            "paidAmountSum": 0.0,
+            "activeDaysSum": 0,
+            "paymentCount": 0
+          }
+        },
+        {
+          "segmentId": "player_explorer_s3_2017-08-01T00:00:00.000Z_2017-08-02T00:00:00.000Z_2017-08-14T09:30:49.933Z",
+          "offset": 20,
+          "event": {
+            "timestamp": "2017-08-01T00:00:00.000Z",
+            "deviceType": "Robot",
+            "sessionCount": 64,
+            "count": 1,
+            "paidAmountSum": 0.0,
+            "activeDaysSum": 0,
+            "paymentCount": 0
+          }
+        },
+        {
+          "segmentId": "player_explorer_s3_2017-08-01T00:00:00.000Z_2017-08-02T00:00:00.000Z_2017-08-14T09:30:49.933Z",
+          "offset": 21,
+          "event": {
+            "timestamp": "2017-08-01T00:00:00.000Z",
+            "deviceType": "Smartphone",
+            "sessionCount": 60,
+            "count": 1,
+            "paidAmountSum": 0.0,
+            "activeDaysSum": 0,
+            "paymentCount": 0
+          }
+        },
+        {
+          "segmentId": "player_explorer_s3_2017-08-01T00:00:00.000Z_2017-08-02T00:00:00.000Z_2017-08-14T09:30:49.933Z",
+          "offset": 22,
+          "event": {
+            "timestamp": "2017-08-01T00:00:00.000Z",
+            "deviceType": "Feature Phone",
+            "sessionCount": 87,
+            "count": 1,
+            "paidAmountSum": 0.0,
+            "activeDaysSum": 0,
+            "paymentCount": 0
+          }
+        },
+        {
+          "segmentId": "player_explorer_s3_2017-08-01T00:00:00.000Z_2017-08-02T00:00:00.000Z_2017-08-14T09:30:49.933Z",
+          "offset": 23,
+          "event": {
+            "timestamp": "2017-08-01T00:00:00.000Z",
+            "deviceType": "Robot",
+            "sessionCount": 67,
+            "count": 1,
+            "paidAmountSum": 0.0,
+            "activeDaysSum": 0,
+            "paymentCount": 0
+          }
+        },
+        {
+          "segmentId": "player_explorer_s3_2017-08-01T00:00:00.000Z_2017-08-02T00:00:00.000Z_2017-08-14T09:30:49.933Z",
+          "offset": 24,
+          "event": {
+            "timestamp": "2017-08-01T00:00:00.000Z",
+            "deviceType": "Feature Phone",
+            "sessionCount": 82,
+            "count": 1,
+            "paidAmountSum": 0.0,
+            "activeDaysSum": 0,
+            "paymentCount": 0
+          }
+        },
+        {
+          "segmentId": "player_explorer_s3_2017-08-01T00:00:00.000Z_2017-08-02T00:00:00.000Z_2017-08-14T09:30:49.933Z",
+          "offset": 25,
+          "event": {
+            "timestamp": "2017-08-01T00:00:00.000Z",
+            "deviceType": "Tablet",
+            "sessionCount": 52,
+            "count": 1,
+            "paidAmountSum": 0.0,
+            "activeDaysSum": 0,
+            "paymentCount": 0
+          }
+        },
+        {
+          "segmentId": "player_explorer_s3_2017-08-01T00:00:00.000Z_2017-08-02T00:00:00.000Z_2017-08-14T09:30:49.933Z",
+          "offset": 26,
+          "event": {
+            "timestamp": "2017-08-01T00:00:00.000Z",
+            "deviceType": "Desktop",
+            "sessionCount": 51,
+            "count": 1,
+            "paidAmountSum": 0.0,
+            "activeDaysSum": 0,
+            "paymentCount": 0
+          }
+        },
+        {
+          "segmentId": "player_explorer_s3_2017-08-01T00:00:00.000Z_2017-08-02T00:00:00.000Z_2017-08-14T09:30:49.933Z",
+          "offset": 27,
+          "event": {
+            "timestamp": "2017-08-01T00:00:00.000Z",
+            "deviceType": "Other",
+            "sessionCount": 88,
+            "count": 1,
+            "paidAmountSum": 0.0,
+            "activeDaysSum": 0,
+            "paymentCount": 0
+          }
+        },
+        {
+          "segmentId": "player_explorer_s3_2017-08-01T00:00:00.000Z_2017-08-02T00:00:00.000Z_2017-08-14T09:30:49.933Z",
+          "offset": 28,
+          "event": {
+            "timestamp": "2017-08-01T00:00:00.000Z",
+            "deviceType": "Smartphone ",
+            "sessionCount": 78,
+            "count": 1,
+            "paidAmountSum": 0.0,
+            "activeDaysSum": 0,
+            "paymentCount": 0
+          }
+        },
+        {
+          "segmentId": "player_explorer_s3_2017-08-01T00:00:00.000Z_2017-08-02T00:00:00.000Z_2017-08-14T09:30:49.933Z",
+          "offset": 29,
+          "event": {
+            "timestamp": "2017-08-01T00:00:00.000Z",
+            "deviceType": "Robot",
+            "sessionCount": 82,
+            "count": 1,
+            "paidAmountSum": 0.0,
+            "activeDaysSum": 0,
+            "paymentCount": 0
+          }
+        },
+        {
+          "segmentId": "player_explorer_s3_2017-08-01T00:00:00.000Z_2017-08-02T00:00:00.000Z_2017-08-14T09:30:49.933Z",
+          "offset": 30,
+          "event": {
+            "timestamp": "2017-08-01T00:00:00.000Z",
+            "deviceType": "Feature Phone",
+            "sessionCount": 86,
+            "count": 1,
+            "paidAmountSum": 0.0,
+            "activeDaysSum": 0,
+            "paymentCount": 0
+          }
+        },
+        {
+          "segmentId": "player_explorer_s3_2017-08-01T00:00:00.000Z_2017-08-02T00:00:00.000Z_2017-08-14T09:30:49.933Z",
+          "offset": 31,
+          "event": {
+            "timestamp": "2017-08-01T00:00:00.000Z",
+            "deviceType": "Feature Phone",
+            "sessionCount": 70,
+            "count": 1,
+            "paidAmountSum": 0.0,
+            "activeDaysSum": 0,
+            "paymentCount": 0
+          }
+        },
+        {
+          "segmentId": "player_explorer_s3_2017-08-01T00:00:00.000Z_2017-08-02T00:00:00.000Z_2017-08-14T09:30:49.933Z",
+          "offset": 32,
+          "event": {
+            "timestamp": "2017-08-01T00:00:00.000Z",
+            "deviceType": "Smartphone",
+            "sessionCount": 66,
+            "count": 1,
+            "paidAmountSum": 0.0,
+            "activeDaysSum": 0,
+            "paymentCount": 0
+          }
+        },
+        {
+          "segmentId": "player_explorer_s3_2017-08-01T00:00:00.000Z_2017-08-02T00:00:00.000Z_2017-08-14T09:30:49.933Z",
+          "offset": 33,
+          "event": {
+            "timestamp": "2017-08-01T00:00:00.000Z",
+            "deviceType": "Desktop",
+            "sessionCount": 54,
+            "count": 1,
+            "paidAmountSum": 0.0,
+            "activeDaysSum": 0,
+            "paymentCount": 0
+          }
+        },
+        {
+          "segmentId": "player_explorer_s3_2017-08-01T00:00:00.000Z_2017-08-02T00:00:00.000Z_2017-08-14T09:30:49.933Z",
+          "offset": 34,
+          "event": {
+            "timestamp": "2017-08-01T00:00:00.000Z",
+            "deviceType": "Smartphone ",
+            "sessionCount": 63,
+            "count": 1,
+            "paidAmountSum": 0.0,
+            "activeDaysSum": 0,
+            "paymentCount": 0
+          }
+        },
+        {
+          "segmentId": "player_explorer_s3_2017-08-01T00:00:00.000Z_2017-08-02T00:00:00.000Z_2017-08-14T09:30:49.933Z",
+          "offset": 35,
+          "event": {
+            "timestamp": "2017-08-01T00:00:00.000Z",
+            "deviceType": "Robot",
+            "sessionCount": 80,
+            "count": 1,
+            "paidAmountSum": 0.0,
+            "activeDaysSum": 0,
+            "paymentCount": 0
+          }
+        },
+        {
+          "segmentId": "player_explorer_s3_2017-08-01T00:00:00.000Z_2017-08-02T00:00:00.000Z_2017-08-14T09:30:49.933Z",
+          "offset": 36,
+          "event": {
+            "timestamp": "2017-08-01T00:00:00.000Z",
+            "deviceType": "Smart-TV",
+            "sessionCount": 91,
+            "count": 1,
+            "paidAmountSum": 0.0,
+            "activeDaysSum": 0,
+            "paymentCount": 0
+          }
+        },
+        {
+          "segmentId": "player_explorer_s3_2017-08-01T00:00:00.000Z_2017-08-02T00:00:00.000Z_2017-08-14T09:30:49.933Z",
+          "offset": 37,
+          "event": {
+            "timestamp": "2017-08-01T00:00:00.000Z",
+            "deviceType": "Other",
+            "sessionCount": 95,
+            "count": 1,
+            "paidAmountSum": 0.0,
+            "activeDaysSum": 0,
+            "paymentCount": 0
+          }
+        },
+        {
+          "segmentId": "player_explorer_s3_2017-08-01T00:00:00.000Z_2017-08-02T00:00:00.000Z_2017-08-14T09:30:49.933Z",
+          "offset": 38,
+          "event": {
+            "timestamp": "2017-08-01T00:00:00.000Z",
+            "deviceType": "Smartphone ",
+            "sessionCount": 89,
+            "count": 1,
+            "paidAmountSum": 0.0,
+            "activeDaysSum": 0,
+            "paymentCount": 0
+          }
+        },
+        {
+          "segmentId": "player_explorer_s3_2017-08-01T00:00:00.000Z_2017-08-02T00:00:00.000Z_2017-08-14T09:30:49.933Z",
+          "offset": 39,
+          "event": {
+            "timestamp": "2017-08-01T00:00:00.000Z",
+            "deviceType": "Feature Phone",
+            "sessionCount": 85,
+            "count": 1,
+            "paidAmountSum": 0.0,
+            "activeDaysSum": 0,
+            "paymentCount": 0
+          }
+        },
+        {
+          "segmentId": "player_explorer_s3_2017-08-01T00:00:00.000Z_2017-08-02T00:00:00.000Z_2017-08-14T09:30:49.933Z",
+          "offset": 40,
+          "event": {
+            "timestamp": "2017-08-01T00:00:00.000Z",
+            "deviceType": "Robot",
+            "sessionCount": 69,
+            "count": 1,
+            "paidAmountSum": 0.0,
+            "activeDaysSum": 0,
+            "paymentCount": 0
+          }
+        },
+        {
+          "segmentId": "player_explorer_s3_2017-08-01T00:00:00.000Z_2017-08-02T00:00:00.000Z_2017-08-14T09:30:49.933Z",
+          "offset": 41,
+          "event": {
+            "timestamp": "2017-08-01T00:00:00.000Z",
+            "deviceType": "Desktop",
+            "sessionCount": 85,
+            "count": 1,
+            "paidAmountSum": 0.0,
+            "activeDaysSum": 0,
+            "paymentCount": 0
+          }
+        },
+        {
+          "segmentId": "player_explorer_s3_2017-08-01T00:00:00.000Z_2017-08-02T00:00:00.000Z_2017-08-14T09:30:49.933Z",
+          "offset": 42,
+          "event": {
+            "timestamp": "2017-08-01T00:00:00.000Z",
+            "deviceType": "Other",
+            "sessionCount": 90,
+            "count": 1,
+            "paidAmountSum": 0.0,
+            "activeDaysSum": 0,
+            "paymentCount": 0
+          }
+        },
+        {
+          "segmentId": "player_explorer_s3_2017-08-01T00:00:00.000Z_2017-08-02T00:00:00.000Z_2017-08-14T09:30:49.933Z",
+          "offset": 43,
+          "event": {
+            "timestamp": "2017-08-01T00:00:00.000Z",
+            "deviceType": "Smart-TV",
+            "sessionCount": 74,
+            "count": 1,
+            "paidAmountSum": 0.0,
+            "activeDaysSum": 0,
+            "paymentCount": 0
+          }
+        },
+        {
+          "segmentId": "player_explorer_s3_2017-08-01T00:00:00.000Z_2017-08-02T00:00:00.000Z_2017-08-14T09:30:49.933Z",
+          "offset": 44,
+          "event": {
+            "timestamp": "2017-08-01T00:00:00.000Z",
+            "deviceType": "Tablet",
+            "sessionCount": 67,
+            "count": 1,
+            "paidAmountSum": 0.0,
+            "activeDaysSum": 0,
+            "paymentCount": 0
+          }
+        },
+        {
+          "segmentId": "player_explorer_s3_2017-08-01T00:00:00.000Z_2017-08-02T00:00:00.000Z_2017-08-14T09:30:49.933Z",
+          "offset": 45,
+          "event": {
+            "timestamp": "2017-08-01T00:00:00.000Z",
+            "deviceType": "Other",
+            "sessionCount": 70,
+            "count": 1,
+            "paidAmountSum": 0.0,
+            "activeDaysSum": 0,
+            "paymentCount": 0
+          }
+        },
+        {
+          "segmentId": "player_explorer_s3_2017-08-01T00:00:00.000Z_2017-08-02T00:00:00.000Z_2017-08-14T09:30:49.933Z",
+          "offset": 46,
+          "event": {
+            "timestamp": "2017-08-01T00:00:00.000Z",
+            "deviceType": "Other",
+            "sessionCount": 84,
+            "count": 1,
+            "paidAmountSum": 0.0,
+            "activeDaysSum": 0,
+            "paymentCount": 0
+          }
+        },
+        {
+          "segmentId": "player_explorer_s3_2017-08-01T00:00:00.000Z_2017-08-02T00:00:00.000Z_2017-08-14T09:30:49.933Z",
+          "offset": 47,
+          "event": {
+            "timestamp": "2017-08-01T00:00:00.000Z",
+            "deviceType": "Tablet",
+            "sessionCount": 91,
+            "count": 1,
+            "paidAmountSum": 0.0,
+            "activeDaysSum": 0,
+            "paymentCount": 0
+          }
+        },
+        {
+          "segmentId": "player_explorer_s3_2017-08-01T00:00:00.000Z_2017-08-02T00:00:00.000Z_2017-08-14T09:30:49.933Z",
+          "offset": 48,
+          "event": {
+            "timestamp": "2017-08-01T00:00:00.000Z",
+            "deviceType": "Feature Phone",
+            "sessionCount": 83,
+            "count": 1,
+            "paidAmountSum": 0.0,
+            "activeDaysSum": 0,
+            "paymentCount": 0
+          }
+        },
+        {
+          "segmentId": "player_explorer_s3_2017-08-01T00:00:00.000Z_2017-08-02T00:00:00.000Z_2017-08-14T09:30:49.933Z",
+          "offset": 49,
+          "event": {
+            "timestamp": "2017-08-01T00:00:00.000Z",
+            "deviceType": "Robot",
+            "sessionCount": 57,
+            "count": 1,
+            "paidAmountSum": 0.0,
+            "activeDaysSum": 0,
+            "paymentCount": 0
+          }
+        },
+        {
+          "segmentId": "player_explorer_s3_2017-08-01T00:00:00.000Z_2017-08-02T00:00:00.000Z_2017-08-14T09:30:49.933Z",
+          "offset": 50,
+          "event": {
+            "timestamp": "2017-08-01T00:00:00.000Z",
+            "deviceType": "Tablet",
+            "sessionCount": 78,
+            "count": 1,
+            "paidAmountSum": 0.0,
+            "activeDaysSum": 0,
+            "paymentCount": 0
+          }
+        },
+        {
+          "segmentId": "player_explorer_s3_2017-08-01T00:00:00.000Z_2017-08-02T00:00:00.000Z_2017-08-14T09:30:49.933Z",
+          "offset": 51,
+          "event": {
+            "timestamp": "2017-08-01T00:00:00.000Z",
+            "deviceType": "Feature Phone",
+            "sessionCount": 60,
+            "count": 1,
+            "paidAmountSum": 0.0,
+            "activeDaysSum": 0,
+            "paymentCount": 0
+          }
+        },
+        {
+          "segmentId": "player_explorer_s3_2017-08-01T00:00:00.000Z_2017-08-02T00:00:00.000Z_2017-08-14T09:30:49.933Z",
+          "offset": 52,
+          "event": {
+            "timestamp": "2017-08-01T00:00:00.000Z",
+            "deviceType": "Tablet",
+            "sessionCount": 79,
+            "count": 1,
+            "paidAmountSum": 0.0,
+            "activeDaysSum": 0,
+            "paymentCount": 0
+          }
+        },
+        {
+          "segmentId": "player_explorer_s3_2017-08-01T00:00:00.000Z_2017-08-02T00:00:00.000Z_2017-08-14T09:30:49.933Z",
+          "offset": 53,
+          "event": {
+            "timestamp": "2017-08-01T00:00:00.000Z",
+            "deviceType": "Desktop",
+            "sessionCount": 58,
+            "count": 1,
+            "paidAmountSum": 0.0,
+            "activeDaysSum": 0,
+            "paymentCount": 0
+          }
+        },
+        {
+          "segmentId": "player_explorer_s3_2017-08-01T00:00:00.000Z_2017-08-02T00:00:00.000Z_2017-08-14T09:30:49.933Z",
+          "offset": 54,
+          "event": {
+            "timestamp": "2017-08-01T00:00:00.000Z",
+            "deviceType": "Feature Phone",
+            "sessionCount": 97,
+            "count": 1,
+            "paidAmountSum": 0.0,
+            "activeDaysSum": 0,
+            "paymentCount": 0
+          }
+        },
+        {
+          "segmentId": "player_explorer_s3_2017-08-01T00:00:00.000Z_2017-08-02T00:00:00.000Z_2017-08-14T09:30:49.933Z",
+          "offset": 55,
+          "event": {
+            "timestamp": "2017-08-01T00:00:00.000Z",
+            "deviceType": "Other",
+            "sessionCount": 94,
+            "count": 1,
+            "paidAmountSum": 0.0,
+            "activeDaysSum": 0,
+            "paymentCount": 0
+          }
+        },
+        {
+          "segmentId": "player_explorer_s3_2017-08-01T00:00:00.000Z_2017-08-02T00:00:00.000Z_2017-08-14T09:30:49.933Z",
+          "offset": 56,
+          "event": {
+            "timestamp": "2017-08-01T00:00:00.000Z",
+            "deviceType": "Desktop",
+            "sessionCount": 53,
+            "count": 1,
+            "paidAmountSum": 0.0,
+            "activeDaysSum": 0,
+            "paymentCount": 0
+          }
+        },
+        {
+          "segmentId": "player_explorer_s3_2017-08-01T00:00:00.000Z_2017-08-02T00:00:00.000Z_2017-08-14T09:30:49.933Z",
+          "offset": 57,
+          "event": {
+            "timestamp": "2017-08-01T00:00:00.000Z",
+            "deviceType": "Robot",
+            "sessionCount": 79,
+            "count": 1,
+            "paidAmountSum": 0.0,
+            "activeDaysSum": 0,
+            "paymentCount": 0
+          }
+        },
+        {
+          "segmentId": "player_explorer_s3_2017-08-01T00:00:00.000Z_2017-08-02T00:00:00.000Z_2017-08-14T09:30:49.933Z",
+          "offset": 58,
+          "event": {
+            "timestamp": "2017-08-01T00:00:00.000Z",
+            "deviceType": "Smartphone",
+            "sessionCount": 75,
+            "count": 1,
+            "paidAmountSum": 0.0,
+            "activeDaysSum": 0,
+            "paymentCount": 0
+          }
+        },
+        {
+          "segmentId": "player_explorer_s3_2017-08-01T00:00:00.000Z_2017-08-02T00:00:00.000Z_2017-08-14T09:30:49.933Z",
+          "offset": 59,
+          "event": {
+            "timestamp": "2017-08-01T00:00:00.000Z",
+            "deviceType": "Smartphone",
+            "sessionCount": 65,
+            "count": 1,
+            "paidAmountSum": 0.0,
+            "activeDaysSum": 0,
+            "paymentCount": 0
+          }
+        },
+        {
+          "segmentId": "player_explorer_s3_2017-08-01T00:00:00.000Z_2017-08-02T00:00:00.000Z_2017-08-14T09:30:49.933Z",
+          "offset": 60,
+          "event": {
+            "timestamp": "2017-08-01T00:00:00.000Z",
+            "deviceType": "Tablet",
+            "sessionCount": 90,
+            "count": 1,
+            "paidAmountSum": 0.0,
+            "activeDaysSum": 0,
+            "paymentCount": 0
+          }
+        },
+        {
+          "segmentId": "player_explorer_s3_2017-08-01T00:00:00.000Z_2017-08-02T00:00:00.000Z_2017-08-14T09:30:49.933Z",
+          "offset": 61,
+          "event": {
+            "timestamp": "2017-08-01T00:00:00.000Z",
+            "deviceType": "Smart-TV",
+            "sessionCount": 54,
+            "count": 1,
+            "paidAmountSum": 0.0,
+            "activeDaysSum": 0,
+            "paymentCount": 0
+          }
+        },
+        {
+          "segmentId": "player_explorer_s3_2017-08-01T00:00:00.000Z_2017-08-02T00:00:00.000Z_2017-08-14T09:30:49.933Z",
+          "offset": 62,
+          "event": {
+            "timestamp": "2017-08-01T00:00:00.000Z",
+            "deviceType": "Smartphone",
+            "sessionCount": 70,
+            "count": 1,
+            "paidAmountSum": 0.0,
+            "activeDaysSum": 0,
+            "paymentCount": 0
+          }
+        },
+        {
+          "segmentId": "player_explorer_s3_2017-08-01T00:00:00.000Z_2017-08-02T00:00:00.000Z_2017-08-14T09:30:49.933Z",
+          "offset": 63,
+          "event": {
+            "timestamp": "2017-08-01T00:00:00.000Z",
+            "deviceType": "Smartphone",
+            "sessionCount": 51,
+            "count": 1,
+            "paidAmountSum": 0.0,
+            "activeDaysSum": 0,
+            "paymentCount": 0
+          }
+        },
+        {
+          "segmentId": "player_explorer_s3_2017-08-01T00:00:00.000Z_2017-08-02T00:00:00.000Z_2017-08-14T09:30:49.933Z",
+          "offset": 64,
+          "event": {
+            "timestamp": "2017-08-01T00:00:00.000Z",
+            "deviceType": "Tablet",
+            "sessionCount": 83,
+            "count": 1,
+            "paidAmountSum": 0.0,
+            "activeDaysSum": 0,
+            "paymentCount": 0
+          }
+        },
+        {
+          "segmentId": "player_explorer_s3_2017-08-01T00:00:00.000Z_2017-08-02T00:00:00.000Z_2017-08-14T09:30:49.933Z",
+          "offset": 65,
+          "event": {
+            "timestamp": "2017-08-01T00:00:00.000Z",
+            "deviceType": "Tablet",
+            "sessionCount": 96,
+            "count": 1,
+            "paidAmountSum": 0.0,
+            "activeDaysSum": 0,
+            "paymentCount": 0
+          }
+        },
+        {
+          "segmentId": "player_explorer_s3_2017-08-01T00:00:00.000Z_2017-08-02T00:00:00.000Z_2017-08-14T09:30:49.933Z",
+          "offset": 66,
+          "event": {
+            "timestamp": "2017-08-01T00:00:00.000Z",
+            "deviceType": "Smartphone ",
+            "sessionCount": 78,
+            "count": 1,
+            "paidAmountSum": 0.0,
+            "activeDaysSum": 0,
+            "paymentCount": 0
+          }
+        },
+        {
+          "segmentId": "player_explorer_s3_2017-08-01T00:00:00.000Z_2017-08-02T00:00:00.000Z_2017-08-14T09:30:49.933Z",
+          "offset": 67,
+          "event": {
+            "timestamp": "2017-08-01T00:00:00.000Z",
+            "deviceType": "Other",
+            "sessionCount": 63,
+            "count": 1,
+            "paidAmountSum": 0.0,
+            "activeDaysSum": 0,
+            "paymentCount": 0
+          }
+        },
+        {
+          "segmentId": "player_explorer_s3_2017-08-01T00:00:00.000Z_2017-08-02T00:00:00.000Z_2017-08-14T09:30:49.933Z",
+          "offset": 68,
+          "event": {
+            "timestamp": "2017-08-01T00:00:00.000Z",
+            "deviceType": "Smartphone",
+            "sessionCount": 92,
+            "count": 1,
+            "paidAmountSum": 0.0,
+            "activeDaysSum": 0,
+            "paymentCount": 0
+          }
+        },
+        {
+          "segmentId": "player_explorer_s3_2017-08-01T00:00:00.000Z_2017-08-02T00:00:00.000Z_2017-08-14T09:30:49.933Z",
+          "offset": 69,
+          "event": {
+            "timestamp": "2017-08-01T00:00:00.000Z",
+            "deviceType": "Feature Phone",
+            "sessionCount": 93,
+            "count": 1,
+            "paidAmountSum": 0.0,
+            "activeDaysSum": 0,
+            "paymentCount": 0
+          }
+        },
+        {
+          "segmentId": "player_explorer_s3_2017-08-01T00:00:00.000Z_2017-08-02T00:00:00.000Z_2017-08-14T09:30:49.933Z",
+          "offset": 70,
+          "event": {
+            "timestamp": "2017-08-01T00:00:00.000Z",
+            "deviceType": "Other",
+            "sessionCount": 87,
+            "count": 1,
+            "paidAmountSum": 0.0,
+            "activeDaysSum": 0,
+            "paymentCount": 0
+          }
+        },
+        {
+          "segmentId": "player_explorer_s3_2017-08-01T00:00:00.000Z_2017-08-02T00:00:00.000Z_2017-08-14T09:30:49.933Z",
+          "offset": 71,
+          "event": {
+            "timestamp": "2017-08-01T00:00:00.000Z",
+            "deviceType": "Smartphone",
+            "sessionCount": 94,
+            "count": 1,
+            "paidAmountSum": 0.0,
+            "activeDaysSum": 0,
+            "paymentCount": 0
+          }
+        },
+        {
+          "segmentId": "player_explorer_s3_2017-08-01T00:00:00.000Z_2017-08-02T00:00:00.000Z_2017-08-14T09:30:49.933Z",
+          "offset": 72,
+          "event": {
+            "timestamp": "2017-08-01T00:00:00.000Z",
+            "deviceType": "Other",
+            "sessionCount": 83,
+            "count": 1,
+            "paidAmountSum": 0.0,
+            "activeDaysSum": 0,
+            "paymentCount": 0
+          }
+        },
+        {
+          "segmentId": "player_explorer_s3_2017-08-01T00:00:00.000Z_2017-08-02T00:00:00.000Z_2017-08-14T09:30:49.933Z",
+          "offset": 73,
+          "event": {
+            "timestamp": "2017-08-01T00:00:00.000Z",
+            "deviceType": "Feature Phone",
+            "sessionCount": 85,
+            "count": 1,
+            "paidAmountSum": 0.0,
+            "activeDaysSum": 0,
+            "paymentCount": 0
+          }
+        },
+        {
+          "segmentId": "player_explorer_s3_2017-08-01T00:00:00.000Z_2017-08-02T00:00:00.000Z_2017-08-14T09:30:49.933Z",
+          "offset": 74,
+          "event": {
+            "timestamp": "2017-08-01T00:00:00.000Z",
+            "deviceType": "Desktop",
+            "sessionCount": 77,
+            "count": 1,
+            "paidAmountSum": 0.0,
+            "activeDaysSum": 0,
+            "paymentCount": 0
+          }
+        },
+        {
+          "segmentId": "player_explorer_s3_2017-08-01T00:00:00.000Z_2017-08-02T00:00:00.000Z_2017-08-14T09:30:49.933Z",
+          "offset": 75,
+          "event": {
+            "timestamp": "2017-08-01T00:00:00.000Z",
+            "deviceType": "Tablet",
+            "sessionCount": 58,
+            "count": 1,
+            "paidAmountSum": 0.0,
+            "activeDaysSum": 0,
+            "paymentCount": 0
+          }
+        },
+        {
+          "segmentId": "player_explorer_s3_2017-08-01T00:00:00.000Z_2017-08-02T00:00:00.000Z_2017-08-14T09:30:49.933Z",
+          "offset": 76,
+          "event": {
+            "timestamp": "2017-08-01T00:00:00.000Z",
+            "deviceType": "Smartphone",
+            "sessionCount": 54,
+            "count": 1,
+            "paidAmountSum": 0.0,
+            "activeDaysSum": 0,
+            "paymentCount": 0
+          }
+        },
+        {
+          "segmentId": "player_explorer_s3_2017-08-01T00:00:00.000Z_2017-08-02T00:00:00.000Z_2017-08-14T09:30:49.933Z",
+          "offset": 77,
+          "event": {
+            "timestamp": "2017-08-01T00:00:00.000Z",
+            "deviceType": "Tablet",
+            "sessionCount": 86,
+            "count": 1,
+            "paidAmountSum": 0.0,
+            "activeDaysSum": 0,
+            "paymentCount": 0
+          }
+        },
+        {
+          "segmentId": "player_explorer_s3_2017-08-01T00:00:00.000Z_2017-08-02T00:00:00.000Z_2017-08-14T09:30:49.933Z",
+          "offset": 78,
+          "event": {
+            "timestamp": "2017-08-01T00:00:00.000Z",
+            "deviceType": "Feature Phone",
+            "sessionCount": 64,
+            "count": 1,
+            "paidAmountSum": 0.0,
+            "activeDaysSum": 0,
+            "paymentCount": 0
+          }
+        },
+        {
+          "segmentId": "player_explorer_s3_2017-08-01T00:00:00.000Z_2017-08-02T00:00:00.000Z_2017-08-14T09:30:49.933Z",
+          "offset": 79,
+          "event": {
+            "timestamp": "2017-08-01T00:00:00.000Z",
+            "deviceType": "Smartphone",
+            "sessionCount": 70,
+            "count": 1,
+            "paidAmountSum": 0.0,
+            "activeDaysSum": 0,
+            "paymentCount": 0
+          }
+        },
+        {
+          "segmentId": "player_explorer_s3_2017-08-01T00:00:00.000Z_2017-08-02T00:00:00.000Z_2017-08-14T09:30:49.933Z",
+          "offset": 80,
+          "event": {
+            "timestamp": "2017-08-01T00:00:00.000Z",
+            "deviceType": "Feature Phone",
+            "sessionCount": 75,
+            "count": 1,
+            "paidAmountSum": 0.0,
+            "activeDaysSum": 0,
+            "paymentCount": 0
+          }
+        },
+        {
+          "segmentId": "player_explorer_s3_2017-08-01T00:00:00.000Z_2017-08-02T00:00:00.000Z_2017-08-14T09:30:49.933Z",
+          "offset": 81,
+          "event": {
+            "timestamp": "2017-08-01T00:00:00.000Z",
+            "deviceType": "Smartphone ",
+            "sessionCount": 89,
+            "count": 1,
+            "paidAmountSum": 0.0,
+            "activeDaysSum": 0,
+            "paymentCount": 0
+          }
+        },
+        {
+          "segmentId": "player_explorer_s3_2017-08-01T00:00:00.000Z_2017-08-02T00:00:00.000Z_2017-08-14T09:30:49.933Z",
+          "offset": 82,
+          "event": {
+            "timestamp": "2017-08-01T00:00:00.000Z",
+            "deviceType": "Smartphone ",
+            "sessionCount": 67,
+            "count": 1,
+            "paidAmountSum": 0.0,
+            "activeDaysSum": 0,
+            "paymentCount": 0
+          }
+        },
+        {
+          "segmentId": "player_explorer_s3_2017-08-01T00:00:00.000Z_2017-08-02T00:00:00.000Z_2017-08-14T09:30:49.933Z",
+          "offset": 83,
+          "event": {
+            "timestamp": "2017-08-01T00:00:00.000Z",
+            "deviceType": "Desktop",
+            "sessionCount": 85,
+            "count": 1,
+            "paidAmountSum": 0.0,
+            "activeDaysSum": 0,
+            "paymentCount": 0
+          }
+        },
+        {
+          "segmentId": "player_explorer_s3_2017-08-01T00:00:00.000Z_2017-08-02T00:00:00.000Z_2017-08-14T09:30:49.933Z",
+          "offset": 84,
+          "event": {
+            "timestamp": "2017-08-01T00:00:00.000Z",
+            "deviceType": "Feature Phone",
+            "sessionCount": 99,
+            "count": 1,
+            "paidAmountSum": 0.0,
+            "activeDaysSum": 0,
+            "paymentCount": 0
+          }
+        },
+        {
+          "segmentId": "player_explorer_s3_2017-08-01T00:00:00.000Z_2017-08-02T00:00:00.000Z_2017-08-14T09:30:49.933Z",
+          "offset": 85,
+          "event": {
+            "timestamp": "2017-08-01T00:00:00.000Z",
+            "deviceType": "Feature Phone",
+            "sessionCount": 56,
+            "count": 1,
+            "paidAmountSum": 0.0,
+            "activeDaysSum": 0,
+            "paymentCount": 0
+          }
+        },
+        {
+          "segmentId": "player_explorer_s3_2017-08-01T00:00:00.000Z_2017-08-02T00:00:00.000Z_2017-08-14T09:30:49.933Z",
+          "offset": 86,
+          "event": {
+            "timestamp": "2017-08-01T00:00:00.000Z",
+            "deviceType": "Feature Phone",
+            "sessionCount": 70,
+            "count": 1,
+            "paidAmountSum": 0.0,
+            "activeDaysSum": 0,
+            "paymentCount": 0
+          }
+        },
+        {
+          "segmentId": "player_explorer_s3_2017-08-01T00:00:00.000Z_2017-08-02T00:00:00.000Z_2017-08-14T09:30:49.933Z",
+          "offset": 87,
+          "event": {
+            "timestamp": "2017-08-01T00:00:00.000Z",
+            "deviceType": "Smartphone",
+            "sessionCount": 54,
+            "count": 1,
+            "paidAmountSum": 0.0,
+            "activeDaysSum": 0,
+            "paymentCount": 0
+          }
+        },
+        {
+          "segmentId": "player_explorer_s3_2017-08-01T00:00:00.000Z_2017-08-02T00:00:00.000Z_2017-08-14T09:30:49.933Z",
+          "offset": 88,
+          "event": {
+            "timestamp": "2017-08-01T00:00:00.000Z",
+            "deviceType": "Smartphone",
+            "sessionCount": 97,
+            "count": 1,
+            "paidAmountSum": 0.0,
+            "activeDaysSum": 0,
+            "paymentCount": 0
+          }
+        },
+        {
+          "segmentId": "player_explorer_s3_2017-08-01T00:00:00.000Z_2017-08-02T00:00:00.000Z_2017-08-14T09:30:49.933Z",
+          "offset": 89,
+          "event": {
+            "timestamp": "2017-08-01T00:00:00.000Z",
+            "deviceType": "Other",
+            "sessionCount": 50,
+            "count": 1,
+            "paidAmountSum": 0.0,
+            "activeDaysSum": 0,
+            "paymentCount": 0
+          }
+        },
+        {
+          "segmentId": "player_explorer_s3_2017-08-01T00:00:00.000Z_2017-08-02T00:00:00.000Z_2017-08-14T09:30:49.933Z",
+          "offset": 90,
+          "event": {
+            "timestamp": "2017-08-01T00:00:00.000Z",
+            "deviceType": "Smart-TV",
+            "sessionCount": 74,
+            "count": 1,
+            "paidAmountSum": 0.0,
+            "activeDaysSum": 0,
+            "paymentCount": 0
+          }
+        },
+        {
+          "segmentId": "player_explorer_s3_2017-08-01T00:00:00.000Z_2017-08-02T00:00:00.000Z_2017-08-14T09:30:49.933Z",
+          "offset": 91,
+          "event": {
+            "timestamp": "2017-08-01T00:00:00.000Z",
+            "deviceType": "Smartphone",
+            "sessionCount": 94,
+            "count": 1,
+            "paidAmountSum": 0.0,
+            "activeDaysSum": 0,
+            "paymentCount": 0
+          }
+        },
+        {
+          "segmentId": "player_explorer_s3_2017-08-01T00:00:00.000Z_2017-08-02T00:00:00.000Z_2017-08-14T09:30:49.933Z",
+          "offset": 92,
+          "event": {
+            "timestamp": "2017-08-01T00:00:00.000Z",
+            "deviceType": "Other",
+            "sessionCount": 173,
+            "count": 1,
+            "paidAmountSum": 0.0,
+            "activeDaysSum": 0,
+            "paymentCount": 0
+          }
+        },
+        {
+          "segmentId": "player_explorer_s3_2017-08-01T00:00:00.000Z_2017-08-02T00:00:00.000Z_2017-08-14T09:30:49.933Z",
+          "offset": 93,
+          "event": {
+            "timestamp": "2017-08-01T00:00:00.000Z",
+            "deviceType": "Tablet",
+            "sessionCount": 119,
+            "count": 1,
+            "paidAmountSum": 0.0,
+            "activeDaysSum": 0,
+            "paymentCount": 0
+          }
+        },
+        {
+          "segmentId": "player_explorer_s3_2017-08-01T00:00:00.000Z_2017-08-02T00:00:00.000Z_2017-08-14T09:30:49.933Z",
+          "offset": 94,
+          "event": {
+            "timestamp": "2017-08-01T00:00:00.000Z",
+            "deviceType": "Robot",
+            "sessionCount": 109,
+            "count": 1,
+            "paidAmountSum": 0.0,
+            "activeDaysSum": 0,
+            "paymentCount": 0
+          }
+        },
+        {
+          "segmentId": "player_explorer_s3_2017-08-01T00:00:00.000Z_2017-08-02T00:00:00.000Z_2017-08-14T09:30:49.933Z",
+          "offset": 95,
+          "event": {
+            "timestamp": "2017-08-01T00:00:00.000Z",
+            "deviceType": "Smartphone",
+            "sessionCount": 154,
+            "count": 1,
+            "paidAmountSum": 0.0,
+            "activeDaysSum": 0,
+            "paymentCount": 0
+          }
+        },
+        {
+          "segmentId": "player_explorer_s3_2017-08-01T00:00:00.000Z_2017-08-02T00:00:00.000Z_2017-08-14T09:30:49.933Z",
+          "offset": 96,
+          "event": {
+            "timestamp": "2017-08-01T00:00:00.000Z",
+            "deviceType": "Smartphone ",
+            "sessionCount": 125,
+            "count": 1,
+            "paidAmountSum": 0.0,
+            "activeDaysSum": 0,
+            "paymentCount": 0
+          }
+        },
+        {
+          "segmentId": "player_explorer_s3_2017-08-01T00:00:00.000Z_2017-08-02T00:00:00.000Z_2017-08-14T09:30:49.933Z",
+          "offset": 97,
+          "event": {
+            "timestamp": "2017-08-01T00:00:00.000Z",
+            "deviceType": "Robot",
+            "sessionCount": 197,
+            "count": 1,
+            "paidAmountSum": 0.0,
+            "activeDaysSum": 0,
+            "paymentCount": 0
+          }
+        },
+        {
+          "segmentId": "player_explorer_s3_2017-08-01T00:00:00.000Z_2017-08-02T00:00:00.000Z_2017-08-14T09:30:49.933Z",
+          "offset": 98,
+          "event": {
+            "timestamp": "2017-08-01T00:00:00.000Z",
+            "deviceType": "Smartphone",
+            "sessionCount": 192,
+            "count": 1,
+            "paidAmountSum": 0.0,
+            "activeDaysSum": 0,
+            "paymentCount": 0
+          }
+        },
+        {
+          "segmentId": "player_explorer_s3_2017-08-01T00:00:00.000Z_2017-08-02T00:00:00.000Z_2017-08-14T09:30:49.933Z",
+          "offset": 99,
+          "event": {
+            "timestamp": "2017-08-01T00:00:00.000Z",
+            "deviceType": "Smartphone ",
+            "sessionCount": 138,
+            "count": 1,
+            "paidAmountSum": 0.0,
+            "activeDaysSum": 0,
+            "paymentCount": 0
+          }
+        }
+      ]
+    }
+  }
+]

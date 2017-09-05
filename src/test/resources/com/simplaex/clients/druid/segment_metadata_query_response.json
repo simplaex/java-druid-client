@@ -1,0 +1,2423 @@
+[ {
+  "id" : "player_explorer_s3_2017-08-01T00:00:00.000Z_2017-08-02T00:00:00.000Z_2017-08-14T09:30:49.933Z",
+  "intervals" : [ "2017-08-01T00:00:00.000Z/2017-08-02T00:00:00.000Z" ],
+  "columns" : {
+    "__time" : {
+      "type" : "LONG",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : null,
+      "minValue" : null,
+      "maxValue" : null,
+      "errorMessage" : null
+    },
+    "acquisitionSource" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 266,
+      "minValue" : "",
+      "maxValue" : "unityads_int",
+      "errorMessage" : null
+    },
+    "activeDaysBucket" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 7,
+      "minValue" : "0",
+      "maxValue" : "50",
+      "errorMessage" : null
+    },
+    "activeDaysSum" : {
+      "type" : "LONG",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : null,
+      "minValue" : null,
+      "maxValue" : null,
+      "errorMessage" : null
+    },
+    "age" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 95,
+      "minValue" : "10",
+      "maxValue" : "99",
+      "errorMessage" : null
+    },
+    "bundles" : {
+      "type" : "STRING",
+      "hasMultipleValues" : true,
+      "size" : 0,
+      "cardinality" : 1000,
+      "minValue" : "{\"element\": \"1001425491\"}",
+      "maxValue" : "{\"element\": \"www.mobilenetworkgroup.com\"}",
+      "errorMessage" : null
+    },
+    "count" : {
+      "type" : "LONG",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : null,
+      "minValue" : null,
+      "maxValue" : null,
+      "errorMessage" : null
+    },
+    "countryCode" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 250,
+      "minValue" : "AD",
+      "maxValue" : "ZW",
+      "errorMessage" : null
+    },
+    "deviceOs" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 6,
+      "minValue" : "Android",
+      "maxValue" : "iOS",
+      "errorMessage" : null
+    },
+    "deviceType" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 8,
+      "minValue" : "Desktop",
+      "maxValue" : "Tablet",
+      "errorMessage" : null
+    },
+    "genres" : {
+      "type" : "STRING",
+      "hasMultipleValues" : true,
+      "size" : 0,
+      "cardinality" : 4,
+      "minValue" : "{\"element\": \"action\"}",
+      "maxValue" : "{\"element\": \"strategy\"}",
+      "errorMessage" : null
+    },
+    "otherApps" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 4,
+      "minValue" : "1",
+      "maxValue" : "4",
+      "errorMessage" : null
+    },
+    "paidAmountBucket" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 7,
+      "minValue" : "",
+      "maxValue" : "50",
+      "errorMessage" : null
+    },
+    "paidAmountSum" : {
+      "type" : "FLOAT",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : null,
+      "minValue" : null,
+      "maxValue" : null,
+      "errorMessage" : null
+    },
+    "paymentCount" : {
+      "type" : "LONG",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : null,
+      "minValue" : null,
+      "maxValue" : null,
+      "errorMessage" : null
+    },
+    "paymentsBucket" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 8,
+      "minValue" : "",
+      "maxValue" : "50",
+      "errorMessage" : null
+    },
+    "regDate" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 5,
+      "minValue" : "1491004800",
+      "maxValue" : "1501545600",
+      "errorMessage" : null
+    },
+    "sessionCount" : {
+      "type" : "LONG",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : null,
+      "minValue" : null,
+      "maxValue" : null,
+      "errorMessage" : null
+    }
+  },
+  "size" : 0,
+  "numRows" : 2499302,
+  "aggregators" : null,
+  "timestampSpec" : null,
+  "queryGranularity" : null,
+  "rollup" : null
+}, {
+  "id" : "player_explorer_s3_2017-08-02T00:00:00.000Z_2017-08-03T00:00:00.000Z_2017-08-14T09:30:49.933Z",
+  "intervals" : [ "2017-08-02T00:00:00.000Z/2017-08-03T00:00:00.000Z" ],
+  "columns" : {
+    "__time" : {
+      "type" : "LONG",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : null,
+      "minValue" : null,
+      "maxValue" : null,
+      "errorMessage" : null
+    },
+    "acquisitionSource" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 266,
+      "minValue" : "",
+      "maxValue" : "unityads_int",
+      "errorMessage" : null
+    },
+    "activeDaysBucket" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 7,
+      "minValue" : "0",
+      "maxValue" : "50",
+      "errorMessage" : null
+    },
+    "activeDaysSum" : {
+      "type" : "LONG",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : null,
+      "minValue" : null,
+      "maxValue" : null,
+      "errorMessage" : null
+    },
+    "age" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 95,
+      "minValue" : "10",
+      "maxValue" : "99",
+      "errorMessage" : null
+    },
+    "bundles" : {
+      "type" : "STRING",
+      "hasMultipleValues" : true,
+      "size" : 0,
+      "cardinality" : 1000,
+      "minValue" : "{\"element\": \"1001425491\"}",
+      "maxValue" : "{\"element\": \"www.mobilenetworkgroup.com\"}",
+      "errorMessage" : null
+    },
+    "count" : {
+      "type" : "LONG",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : null,
+      "minValue" : null,
+      "maxValue" : null,
+      "errorMessage" : null
+    },
+    "countryCode" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 250,
+      "minValue" : "AD",
+      "maxValue" : "ZW",
+      "errorMessage" : null
+    },
+    "deviceOs" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 6,
+      "minValue" : "Android",
+      "maxValue" : "iOS",
+      "errorMessage" : null
+    },
+    "deviceType" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 8,
+      "minValue" : "Desktop",
+      "maxValue" : "Tablet",
+      "errorMessage" : null
+    },
+    "genres" : {
+      "type" : "STRING",
+      "hasMultipleValues" : true,
+      "size" : 0,
+      "cardinality" : 4,
+      "minValue" : "{\"element\": \"action\"}",
+      "maxValue" : "{\"element\": \"strategy\"}",
+      "errorMessage" : null
+    },
+    "otherApps" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 4,
+      "minValue" : "1",
+      "maxValue" : "4",
+      "errorMessage" : null
+    },
+    "paidAmountBucket" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 7,
+      "minValue" : "",
+      "maxValue" : "50",
+      "errorMessage" : null
+    },
+    "paidAmountSum" : {
+      "type" : "FLOAT",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : null,
+      "minValue" : null,
+      "maxValue" : null,
+      "errorMessage" : null
+    },
+    "paymentCount" : {
+      "type" : "LONG",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : null,
+      "minValue" : null,
+      "maxValue" : null,
+      "errorMessage" : null
+    },
+    "paymentsBucket" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 8,
+      "minValue" : "",
+      "maxValue" : "50",
+      "errorMessage" : null
+    },
+    "regDate" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 5,
+      "minValue" : "1491004800",
+      "maxValue" : "1501545600",
+      "errorMessage" : null
+    },
+    "sessionCount" : {
+      "type" : "LONG",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : null,
+      "minValue" : null,
+      "maxValue" : null,
+      "errorMessage" : null
+    }
+  },
+  "size" : 0,
+  "numRows" : 2498897,
+  "aggregators" : null,
+  "timestampSpec" : null,
+  "queryGranularity" : null,
+  "rollup" : null
+}, {
+  "id" : "player_explorer_s3_2017-08-03T00:00:00.000Z_2017-08-04T00:00:00.000Z_2017-08-14T09:30:49.933Z",
+  "intervals" : [ "2017-08-03T00:00:00.000Z/2017-08-04T00:00:00.000Z" ],
+  "columns" : {
+    "__time" : {
+      "type" : "LONG",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : null,
+      "minValue" : null,
+      "maxValue" : null,
+      "errorMessage" : null
+    },
+    "acquisitionSource" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 266,
+      "minValue" : "",
+      "maxValue" : "unityads_int",
+      "errorMessage" : null
+    },
+    "activeDaysBucket" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 7,
+      "minValue" : "0",
+      "maxValue" : "50",
+      "errorMessage" : null
+    },
+    "activeDaysSum" : {
+      "type" : "LONG",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : null,
+      "minValue" : null,
+      "maxValue" : null,
+      "errorMessage" : null
+    },
+    "age" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 95,
+      "minValue" : "10",
+      "maxValue" : "99",
+      "errorMessage" : null
+    },
+    "bundles" : {
+      "type" : "STRING",
+      "hasMultipleValues" : true,
+      "size" : 0,
+      "cardinality" : 1000,
+      "minValue" : "{\"element\": \"1001425491\"}",
+      "maxValue" : "{\"element\": \"www.mobilenetworkgroup.com\"}",
+      "errorMessage" : null
+    },
+    "count" : {
+      "type" : "LONG",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : null,
+      "minValue" : null,
+      "maxValue" : null,
+      "errorMessage" : null
+    },
+    "countryCode" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 250,
+      "minValue" : "AD",
+      "maxValue" : "ZW",
+      "errorMessage" : null
+    },
+    "deviceOs" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 6,
+      "minValue" : "Android",
+      "maxValue" : "iOS",
+      "errorMessage" : null
+    },
+    "deviceType" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 8,
+      "minValue" : "Desktop",
+      "maxValue" : "Tablet",
+      "errorMessage" : null
+    },
+    "genres" : {
+      "type" : "STRING",
+      "hasMultipleValues" : true,
+      "size" : 0,
+      "cardinality" : 4,
+      "minValue" : "{\"element\": \"action\"}",
+      "maxValue" : "{\"element\": \"strategy\"}",
+      "errorMessage" : null
+    },
+    "otherApps" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 4,
+      "minValue" : "1",
+      "maxValue" : "4",
+      "errorMessage" : null
+    },
+    "paidAmountBucket" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 7,
+      "minValue" : "",
+      "maxValue" : "50",
+      "errorMessage" : null
+    },
+    "paidAmountSum" : {
+      "type" : "FLOAT",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : null,
+      "minValue" : null,
+      "maxValue" : null,
+      "errorMessage" : null
+    },
+    "paymentCount" : {
+      "type" : "LONG",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : null,
+      "minValue" : null,
+      "maxValue" : null,
+      "errorMessage" : null
+    },
+    "paymentsBucket" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 8,
+      "minValue" : "",
+      "maxValue" : "50",
+      "errorMessage" : null
+    },
+    "regDate" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 5,
+      "minValue" : "1491004800",
+      "maxValue" : "1501545600",
+      "errorMessage" : null
+    },
+    "sessionCount" : {
+      "type" : "LONG",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : null,
+      "minValue" : null,
+      "maxValue" : null,
+      "errorMessage" : null
+    }
+  },
+  "size" : 0,
+  "numRows" : 2499777,
+  "aggregators" : null,
+  "timestampSpec" : null,
+  "queryGranularity" : null,
+  "rollup" : null
+}, {
+  "id" : "player_explorer_s3_2017-08-04T00:00:00.000Z_2017-08-05T00:00:00.000Z_2017-08-14T09:30:49.933Z",
+  "intervals" : [ "2017-08-04T00:00:00.000Z/2017-08-05T00:00:00.000Z" ],
+  "columns" : {
+    "__time" : {
+      "type" : "LONG",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : null,
+      "minValue" : null,
+      "maxValue" : null,
+      "errorMessage" : null
+    },
+    "acquisitionSource" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 266,
+      "minValue" : "",
+      "maxValue" : "unityads_int",
+      "errorMessage" : null
+    },
+    "activeDaysBucket" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 7,
+      "minValue" : "0",
+      "maxValue" : "50",
+      "errorMessage" : null
+    },
+    "activeDaysSum" : {
+      "type" : "LONG",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : null,
+      "minValue" : null,
+      "maxValue" : null,
+      "errorMessage" : null
+    },
+    "age" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 95,
+      "minValue" : "10",
+      "maxValue" : "99",
+      "errorMessage" : null
+    },
+    "bundles" : {
+      "type" : "STRING",
+      "hasMultipleValues" : true,
+      "size" : 0,
+      "cardinality" : 1000,
+      "minValue" : "{\"element\": \"1001425491\"}",
+      "maxValue" : "{\"element\": \"www.mobilenetworkgroup.com\"}",
+      "errorMessage" : null
+    },
+    "count" : {
+      "type" : "LONG",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : null,
+      "minValue" : null,
+      "maxValue" : null,
+      "errorMessage" : null
+    },
+    "countryCode" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 250,
+      "minValue" : "AD",
+      "maxValue" : "ZW",
+      "errorMessage" : null
+    },
+    "deviceOs" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 6,
+      "minValue" : "Android",
+      "maxValue" : "iOS",
+      "errorMessage" : null
+    },
+    "deviceType" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 8,
+      "minValue" : "Desktop",
+      "maxValue" : "Tablet",
+      "errorMessage" : null
+    },
+    "genres" : {
+      "type" : "STRING",
+      "hasMultipleValues" : true,
+      "size" : 0,
+      "cardinality" : 4,
+      "minValue" : "{\"element\": \"action\"}",
+      "maxValue" : "{\"element\": \"strategy\"}",
+      "errorMessage" : null
+    },
+    "otherApps" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 4,
+      "minValue" : "1",
+      "maxValue" : "4",
+      "errorMessage" : null
+    },
+    "paidAmountBucket" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 7,
+      "minValue" : "",
+      "maxValue" : "50",
+      "errorMessage" : null
+    },
+    "paidAmountSum" : {
+      "type" : "FLOAT",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : null,
+      "minValue" : null,
+      "maxValue" : null,
+      "errorMessage" : null
+    },
+    "paymentCount" : {
+      "type" : "LONG",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : null,
+      "minValue" : null,
+      "maxValue" : null,
+      "errorMessage" : null
+    },
+    "paymentsBucket" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 8,
+      "minValue" : "",
+      "maxValue" : "50",
+      "errorMessage" : null
+    },
+    "regDate" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 5,
+      "minValue" : "1491004800",
+      "maxValue" : "1501545600",
+      "errorMessage" : null
+    },
+    "sessionCount" : {
+      "type" : "LONG",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : null,
+      "minValue" : null,
+      "maxValue" : null,
+      "errorMessage" : null
+    }
+  },
+  "size" : 0,
+  "numRows" : 2500118,
+  "aggregators" : null,
+  "timestampSpec" : null,
+  "queryGranularity" : null,
+  "rollup" : null
+}, {
+  "id" : "player_explorer_s3_2017-08-05T00:00:00.000Z_2017-08-06T00:00:00.000Z_2017-08-14T09:30:49.933Z",
+  "intervals" : [ "2017-08-05T00:00:00.000Z/2017-08-06T00:00:00.000Z" ],
+  "columns" : {
+    "__time" : {
+      "type" : "LONG",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : null,
+      "minValue" : null,
+      "maxValue" : null,
+      "errorMessage" : null
+    },
+    "acquisitionSource" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 266,
+      "minValue" : "",
+      "maxValue" : "unityads_int",
+      "errorMessage" : null
+    },
+    "activeDaysBucket" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 7,
+      "minValue" : "0",
+      "maxValue" : "50",
+      "errorMessage" : null
+    },
+    "activeDaysSum" : {
+      "type" : "LONG",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : null,
+      "minValue" : null,
+      "maxValue" : null,
+      "errorMessage" : null
+    },
+    "age" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 95,
+      "minValue" : "10",
+      "maxValue" : "99",
+      "errorMessage" : null
+    },
+    "bundles" : {
+      "type" : "STRING",
+      "hasMultipleValues" : true,
+      "size" : 0,
+      "cardinality" : 1000,
+      "minValue" : "{\"element\": \"1001425491\"}",
+      "maxValue" : "{\"element\": \"www.mobilenetworkgroup.com\"}",
+      "errorMessage" : null
+    },
+    "count" : {
+      "type" : "LONG",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : null,
+      "minValue" : null,
+      "maxValue" : null,
+      "errorMessage" : null
+    },
+    "countryCode" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 250,
+      "minValue" : "AD",
+      "maxValue" : "ZW",
+      "errorMessage" : null
+    },
+    "deviceOs" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 6,
+      "minValue" : "Android",
+      "maxValue" : "iOS",
+      "errorMessage" : null
+    },
+    "deviceType" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 8,
+      "minValue" : "Desktop",
+      "maxValue" : "Tablet",
+      "errorMessage" : null
+    },
+    "genres" : {
+      "type" : "STRING",
+      "hasMultipleValues" : true,
+      "size" : 0,
+      "cardinality" : 4,
+      "minValue" : "{\"element\": \"action\"}",
+      "maxValue" : "{\"element\": \"strategy\"}",
+      "errorMessage" : null
+    },
+    "otherApps" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 4,
+      "minValue" : "1",
+      "maxValue" : "4",
+      "errorMessage" : null
+    },
+    "paidAmountBucket" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 7,
+      "minValue" : "",
+      "maxValue" : "50",
+      "errorMessage" : null
+    },
+    "paidAmountSum" : {
+      "type" : "FLOAT",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : null,
+      "minValue" : null,
+      "maxValue" : null,
+      "errorMessage" : null
+    },
+    "paymentCount" : {
+      "type" : "LONG",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : null,
+      "minValue" : null,
+      "maxValue" : null,
+      "errorMessage" : null
+    },
+    "paymentsBucket" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 8,
+      "minValue" : "",
+      "maxValue" : "50",
+      "errorMessage" : null
+    },
+    "regDate" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 5,
+      "minValue" : "1491004800",
+      "maxValue" : "1501545600",
+      "errorMessage" : null
+    },
+    "sessionCount" : {
+      "type" : "LONG",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : null,
+      "minValue" : null,
+      "maxValue" : null,
+      "errorMessage" : null
+    }
+  },
+  "size" : 0,
+  "numRows" : 2498803,
+  "aggregators" : null,
+  "timestampSpec" : null,
+  "queryGranularity" : null,
+  "rollup" : null
+}, {
+  "id" : "player_explorer_s3_2017-08-06T00:00:00.000Z_2017-08-07T00:00:00.000Z_2017-08-14T09:30:49.933Z",
+  "intervals" : [ "2017-08-06T00:00:00.000Z/2017-08-07T00:00:00.000Z" ],
+  "columns" : {
+    "__time" : {
+      "type" : "LONG",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : null,
+      "minValue" : null,
+      "maxValue" : null,
+      "errorMessage" : null
+    },
+    "acquisitionSource" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 266,
+      "minValue" : "",
+      "maxValue" : "unityads_int",
+      "errorMessage" : null
+    },
+    "activeDaysBucket" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 7,
+      "minValue" : "0",
+      "maxValue" : "50",
+      "errorMessage" : null
+    },
+    "activeDaysSum" : {
+      "type" : "LONG",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : null,
+      "minValue" : null,
+      "maxValue" : null,
+      "errorMessage" : null
+    },
+    "age" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 95,
+      "minValue" : "10",
+      "maxValue" : "99",
+      "errorMessage" : null
+    },
+    "bundles" : {
+      "type" : "STRING",
+      "hasMultipleValues" : true,
+      "size" : 0,
+      "cardinality" : 1000,
+      "minValue" : "{\"element\": \"1001425491\"}",
+      "maxValue" : "{\"element\": \"www.mobilenetworkgroup.com\"}",
+      "errorMessage" : null
+    },
+    "count" : {
+      "type" : "LONG",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : null,
+      "minValue" : null,
+      "maxValue" : null,
+      "errorMessage" : null
+    },
+    "countryCode" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 250,
+      "minValue" : "AD",
+      "maxValue" : "ZW",
+      "errorMessage" : null
+    },
+    "deviceOs" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 6,
+      "minValue" : "Android",
+      "maxValue" : "iOS",
+      "errorMessage" : null
+    },
+    "deviceType" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 8,
+      "minValue" : "Desktop",
+      "maxValue" : "Tablet",
+      "errorMessage" : null
+    },
+    "genres" : {
+      "type" : "STRING",
+      "hasMultipleValues" : true,
+      "size" : 0,
+      "cardinality" : 4,
+      "minValue" : "{\"element\": \"action\"}",
+      "maxValue" : "{\"element\": \"strategy\"}",
+      "errorMessage" : null
+    },
+    "otherApps" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 4,
+      "minValue" : "1",
+      "maxValue" : "4",
+      "errorMessage" : null
+    },
+    "paidAmountBucket" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 7,
+      "minValue" : "",
+      "maxValue" : "50",
+      "errorMessage" : null
+    },
+    "paidAmountSum" : {
+      "type" : "FLOAT",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : null,
+      "minValue" : null,
+      "maxValue" : null,
+      "errorMessage" : null
+    },
+    "paymentCount" : {
+      "type" : "LONG",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : null,
+      "minValue" : null,
+      "maxValue" : null,
+      "errorMessage" : null
+    },
+    "paymentsBucket" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 8,
+      "minValue" : "",
+      "maxValue" : "50",
+      "errorMessage" : null
+    },
+    "regDate" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 5,
+      "minValue" : "1491004800",
+      "maxValue" : "1501545600",
+      "errorMessage" : null
+    },
+    "sessionCount" : {
+      "type" : "LONG",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : null,
+      "minValue" : null,
+      "maxValue" : null,
+      "errorMessage" : null
+    }
+  },
+  "size" : 0,
+  "numRows" : 2501760,
+  "aggregators" : null,
+  "timestampSpec" : null,
+  "queryGranularity" : null,
+  "rollup" : null
+}, {
+  "id" : "player_explorer_s3_2017-08-07T00:00:00.000Z_2017-08-08T00:00:00.000Z_2017-08-14T09:30:49.933Z",
+  "intervals" : [ "2017-08-07T00:00:00.000Z/2017-08-08T00:00:00.000Z" ],
+  "columns" : {
+    "__time" : {
+      "type" : "LONG",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : null,
+      "minValue" : null,
+      "maxValue" : null,
+      "errorMessage" : null
+    },
+    "acquisitionSource" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 266,
+      "minValue" : "",
+      "maxValue" : "unityads_int",
+      "errorMessage" : null
+    },
+    "activeDaysBucket" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 7,
+      "minValue" : "0",
+      "maxValue" : "50",
+      "errorMessage" : null
+    },
+    "activeDaysSum" : {
+      "type" : "LONG",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : null,
+      "minValue" : null,
+      "maxValue" : null,
+      "errorMessage" : null
+    },
+    "age" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 95,
+      "minValue" : "10",
+      "maxValue" : "99",
+      "errorMessage" : null
+    },
+    "bundles" : {
+      "type" : "STRING",
+      "hasMultipleValues" : true,
+      "size" : 0,
+      "cardinality" : 1000,
+      "minValue" : "{\"element\": \"1001425491\"}",
+      "maxValue" : "{\"element\": \"www.mobilenetworkgroup.com\"}",
+      "errorMessage" : null
+    },
+    "count" : {
+      "type" : "LONG",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : null,
+      "minValue" : null,
+      "maxValue" : null,
+      "errorMessage" : null
+    },
+    "countryCode" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 250,
+      "minValue" : "AD",
+      "maxValue" : "ZW",
+      "errorMessage" : null
+    },
+    "deviceOs" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 6,
+      "minValue" : "Android",
+      "maxValue" : "iOS",
+      "errorMessage" : null
+    },
+    "deviceType" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 8,
+      "minValue" : "Desktop",
+      "maxValue" : "Tablet",
+      "errorMessage" : null
+    },
+    "genres" : {
+      "type" : "STRING",
+      "hasMultipleValues" : true,
+      "size" : 0,
+      "cardinality" : 4,
+      "minValue" : "{\"element\": \"action\"}",
+      "maxValue" : "{\"element\": \"strategy\"}",
+      "errorMessage" : null
+    },
+    "otherApps" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 4,
+      "minValue" : "1",
+      "maxValue" : "4",
+      "errorMessage" : null
+    },
+    "paidAmountBucket" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 7,
+      "minValue" : "",
+      "maxValue" : "50",
+      "errorMessage" : null
+    },
+    "paidAmountSum" : {
+      "type" : "FLOAT",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : null,
+      "minValue" : null,
+      "maxValue" : null,
+      "errorMessage" : null
+    },
+    "paymentCount" : {
+      "type" : "LONG",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : null,
+      "minValue" : null,
+      "maxValue" : null,
+      "errorMessage" : null
+    },
+    "paymentsBucket" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 8,
+      "minValue" : "",
+      "maxValue" : "50",
+      "errorMessage" : null
+    },
+    "regDate" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 5,
+      "minValue" : "1491004800",
+      "maxValue" : "1501545600",
+      "errorMessage" : null
+    },
+    "sessionCount" : {
+      "type" : "LONG",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : null,
+      "minValue" : null,
+      "maxValue" : null,
+      "errorMessage" : null
+    }
+  },
+  "size" : 0,
+  "numRows" : 2499440,
+  "aggregators" : null,
+  "timestampSpec" : null,
+  "queryGranularity" : null,
+  "rollup" : null
+}, {
+  "id" : "player_explorer_s3_2017-08-08T00:00:00.000Z_2017-08-09T00:00:00.000Z_2017-08-14T09:30:49.933Z",
+  "intervals" : [ "2017-08-08T00:00:00.000Z/2017-08-09T00:00:00.000Z" ],
+  "columns" : {
+    "__time" : {
+      "type" : "LONG",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : null,
+      "minValue" : null,
+      "maxValue" : null,
+      "errorMessage" : null
+    },
+    "acquisitionSource" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 266,
+      "minValue" : "",
+      "maxValue" : "unityads_int",
+      "errorMessage" : null
+    },
+    "activeDaysBucket" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 7,
+      "minValue" : "0",
+      "maxValue" : "50",
+      "errorMessage" : null
+    },
+    "activeDaysSum" : {
+      "type" : "LONG",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : null,
+      "minValue" : null,
+      "maxValue" : null,
+      "errorMessage" : null
+    },
+    "age" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 95,
+      "minValue" : "10",
+      "maxValue" : "99",
+      "errorMessage" : null
+    },
+    "bundles" : {
+      "type" : "STRING",
+      "hasMultipleValues" : true,
+      "size" : 0,
+      "cardinality" : 1000,
+      "minValue" : "{\"element\": \"1001425491\"}",
+      "maxValue" : "{\"element\": \"www.mobilenetworkgroup.com\"}",
+      "errorMessage" : null
+    },
+    "count" : {
+      "type" : "LONG",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : null,
+      "minValue" : null,
+      "maxValue" : null,
+      "errorMessage" : null
+    },
+    "countryCode" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 250,
+      "minValue" : "AD",
+      "maxValue" : "ZW",
+      "errorMessage" : null
+    },
+    "deviceOs" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 6,
+      "minValue" : "Android",
+      "maxValue" : "iOS",
+      "errorMessage" : null
+    },
+    "deviceType" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 8,
+      "minValue" : "Desktop",
+      "maxValue" : "Tablet",
+      "errorMessage" : null
+    },
+    "genres" : {
+      "type" : "STRING",
+      "hasMultipleValues" : true,
+      "size" : 0,
+      "cardinality" : 4,
+      "minValue" : "{\"element\": \"action\"}",
+      "maxValue" : "{\"element\": \"strategy\"}",
+      "errorMessage" : null
+    },
+    "otherApps" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 4,
+      "minValue" : "1",
+      "maxValue" : "4",
+      "errorMessage" : null
+    },
+    "paidAmountBucket" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 7,
+      "minValue" : "",
+      "maxValue" : "50",
+      "errorMessage" : null
+    },
+    "paidAmountSum" : {
+      "type" : "FLOAT",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : null,
+      "minValue" : null,
+      "maxValue" : null,
+      "errorMessage" : null
+    },
+    "paymentCount" : {
+      "type" : "LONG",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : null,
+      "minValue" : null,
+      "maxValue" : null,
+      "errorMessage" : null
+    },
+    "paymentsBucket" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 8,
+      "minValue" : "",
+      "maxValue" : "50",
+      "errorMessage" : null
+    },
+    "regDate" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 5,
+      "minValue" : "1491004800",
+      "maxValue" : "1501545600",
+      "errorMessage" : null
+    },
+    "sessionCount" : {
+      "type" : "LONG",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : null,
+      "minValue" : null,
+      "maxValue" : null,
+      "errorMessage" : null
+    }
+  },
+  "size" : 0,
+  "numRows" : 2499548,
+  "aggregators" : null,
+  "timestampSpec" : null,
+  "queryGranularity" : null,
+  "rollup" : null
+}, {
+  "id" : "player_explorer_s3_2017-08-09T00:00:00.000Z_2017-08-10T00:00:00.000Z_2017-08-14T09:30:49.933Z",
+  "intervals" : [ "2017-08-09T00:00:00.000Z/2017-08-10T00:00:00.000Z" ],
+  "columns" : {
+    "__time" : {
+      "type" : "LONG",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : null,
+      "minValue" : null,
+      "maxValue" : null,
+      "errorMessage" : null
+    },
+    "acquisitionSource" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 266,
+      "minValue" : "",
+      "maxValue" : "unityads_int",
+      "errorMessage" : null
+    },
+    "activeDaysBucket" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 7,
+      "minValue" : "0",
+      "maxValue" : "50",
+      "errorMessage" : null
+    },
+    "activeDaysSum" : {
+      "type" : "LONG",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : null,
+      "minValue" : null,
+      "maxValue" : null,
+      "errorMessage" : null
+    },
+    "age" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 95,
+      "minValue" : "10",
+      "maxValue" : "99",
+      "errorMessage" : null
+    },
+    "bundles" : {
+      "type" : "STRING",
+      "hasMultipleValues" : true,
+      "size" : 0,
+      "cardinality" : 1000,
+      "minValue" : "{\"element\": \"1001425491\"}",
+      "maxValue" : "{\"element\": \"www.mobilenetworkgroup.com\"}",
+      "errorMessage" : null
+    },
+    "count" : {
+      "type" : "LONG",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : null,
+      "minValue" : null,
+      "maxValue" : null,
+      "errorMessage" : null
+    },
+    "countryCode" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 250,
+      "minValue" : "AD",
+      "maxValue" : "ZW",
+      "errorMessage" : null
+    },
+    "deviceOs" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 6,
+      "minValue" : "Android",
+      "maxValue" : "iOS",
+      "errorMessage" : null
+    },
+    "deviceType" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 8,
+      "minValue" : "Desktop",
+      "maxValue" : "Tablet",
+      "errorMessage" : null
+    },
+    "genres" : {
+      "type" : "STRING",
+      "hasMultipleValues" : true,
+      "size" : 0,
+      "cardinality" : 4,
+      "minValue" : "{\"element\": \"action\"}",
+      "maxValue" : "{\"element\": \"strategy\"}",
+      "errorMessage" : null
+    },
+    "otherApps" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 4,
+      "minValue" : "1",
+      "maxValue" : "4",
+      "errorMessage" : null
+    },
+    "paidAmountBucket" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 7,
+      "minValue" : "",
+      "maxValue" : "50",
+      "errorMessage" : null
+    },
+    "paidAmountSum" : {
+      "type" : "FLOAT",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : null,
+      "minValue" : null,
+      "maxValue" : null,
+      "errorMessage" : null
+    },
+    "paymentCount" : {
+      "type" : "LONG",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : null,
+      "minValue" : null,
+      "maxValue" : null,
+      "errorMessage" : null
+    },
+    "paymentsBucket" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 8,
+      "minValue" : "",
+      "maxValue" : "50",
+      "errorMessage" : null
+    },
+    "regDate" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 5,
+      "minValue" : "1491004800",
+      "maxValue" : "1501545600",
+      "errorMessage" : null
+    },
+    "sessionCount" : {
+      "type" : "LONG",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : null,
+      "minValue" : null,
+      "maxValue" : null,
+      "errorMessage" : null
+    }
+  },
+  "size" : 0,
+  "numRows" : 2499420,
+  "aggregators" : null,
+  "timestampSpec" : null,
+  "queryGranularity" : null,
+  "rollup" : null
+}, {
+  "id" : "player_explorer_s3_2017-08-10T00:00:00.000Z_2017-08-11T00:00:00.000Z_2017-08-14T09:30:49.933Z",
+  "intervals" : [ "2017-08-10T00:00:00.000Z/2017-08-11T00:00:00.000Z" ],
+  "columns" : {
+    "__time" : {
+      "type" : "LONG",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : null,
+      "minValue" : null,
+      "maxValue" : null,
+      "errorMessage" : null
+    },
+    "acquisitionSource" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 266,
+      "minValue" : "",
+      "maxValue" : "unityads_int",
+      "errorMessage" : null
+    },
+    "activeDaysBucket" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 7,
+      "minValue" : "0",
+      "maxValue" : "50",
+      "errorMessage" : null
+    },
+    "activeDaysSum" : {
+      "type" : "LONG",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : null,
+      "minValue" : null,
+      "maxValue" : null,
+      "errorMessage" : null
+    },
+    "age" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 95,
+      "minValue" : "10",
+      "maxValue" : "99",
+      "errorMessage" : null
+    },
+    "bundles" : {
+      "type" : "STRING",
+      "hasMultipleValues" : true,
+      "size" : 0,
+      "cardinality" : 1000,
+      "minValue" : "{\"element\": \"1001425491\"}",
+      "maxValue" : "{\"element\": \"www.mobilenetworkgroup.com\"}",
+      "errorMessage" : null
+    },
+    "count" : {
+      "type" : "LONG",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : null,
+      "minValue" : null,
+      "maxValue" : null,
+      "errorMessage" : null
+    },
+    "countryCode" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 250,
+      "minValue" : "AD",
+      "maxValue" : "ZW",
+      "errorMessage" : null
+    },
+    "deviceOs" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 6,
+      "minValue" : "Android",
+      "maxValue" : "iOS",
+      "errorMessage" : null
+    },
+    "deviceType" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 8,
+      "minValue" : "Desktop",
+      "maxValue" : "Tablet",
+      "errorMessage" : null
+    },
+    "genres" : {
+      "type" : "STRING",
+      "hasMultipleValues" : true,
+      "size" : 0,
+      "cardinality" : 4,
+      "minValue" : "{\"element\": \"action\"}",
+      "maxValue" : "{\"element\": \"strategy\"}",
+      "errorMessage" : null
+    },
+    "otherApps" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 4,
+      "minValue" : "1",
+      "maxValue" : "4",
+      "errorMessage" : null
+    },
+    "paidAmountBucket" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 7,
+      "minValue" : "",
+      "maxValue" : "50",
+      "errorMessage" : null
+    },
+    "paidAmountSum" : {
+      "type" : "FLOAT",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : null,
+      "minValue" : null,
+      "maxValue" : null,
+      "errorMessage" : null
+    },
+    "paymentCount" : {
+      "type" : "LONG",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : null,
+      "minValue" : null,
+      "maxValue" : null,
+      "errorMessage" : null
+    },
+    "paymentsBucket" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 8,
+      "minValue" : "",
+      "maxValue" : "50",
+      "errorMessage" : null
+    },
+    "regDate" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 5,
+      "minValue" : "1491004800",
+      "maxValue" : "1501545600",
+      "errorMessage" : null
+    },
+    "sessionCount" : {
+      "type" : "LONG",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : null,
+      "minValue" : null,
+      "maxValue" : null,
+      "errorMessage" : null
+    }
+  },
+  "size" : 0,
+  "numRows" : 2499502,
+  "aggregators" : null,
+  "timestampSpec" : null,
+  "queryGranularity" : null,
+  "rollup" : null
+}, {
+  "id" : "player_explorer_s3_2017-08-11T00:00:00.000Z_2017-08-12T00:00:00.000Z_2017-08-14T09:30:49.933Z",
+  "intervals" : [ "2017-08-11T00:00:00.000Z/2017-08-12T00:00:00.000Z" ],
+  "columns" : {
+    "__time" : {
+      "type" : "LONG",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : null,
+      "minValue" : null,
+      "maxValue" : null,
+      "errorMessage" : null
+    },
+    "acquisitionSource" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 266,
+      "minValue" : "",
+      "maxValue" : "unityads_int",
+      "errorMessage" : null
+    },
+    "activeDaysBucket" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 7,
+      "minValue" : "0",
+      "maxValue" : "50",
+      "errorMessage" : null
+    },
+    "activeDaysSum" : {
+      "type" : "LONG",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : null,
+      "minValue" : null,
+      "maxValue" : null,
+      "errorMessage" : null
+    },
+    "age" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 95,
+      "minValue" : "10",
+      "maxValue" : "99",
+      "errorMessage" : null
+    },
+    "bundles" : {
+      "type" : "STRING",
+      "hasMultipleValues" : true,
+      "size" : 0,
+      "cardinality" : 1000,
+      "minValue" : "{\"element\": \"1001425491\"}",
+      "maxValue" : "{\"element\": \"www.mobilenetworkgroup.com\"}",
+      "errorMessage" : null
+    },
+    "count" : {
+      "type" : "LONG",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : null,
+      "minValue" : null,
+      "maxValue" : null,
+      "errorMessage" : null
+    },
+    "countryCode" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 250,
+      "minValue" : "AD",
+      "maxValue" : "ZW",
+      "errorMessage" : null
+    },
+    "deviceOs" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 6,
+      "minValue" : "Android",
+      "maxValue" : "iOS",
+      "errorMessage" : null
+    },
+    "deviceType" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 8,
+      "minValue" : "Desktop",
+      "maxValue" : "Tablet",
+      "errorMessage" : null
+    },
+    "genres" : {
+      "type" : "STRING",
+      "hasMultipleValues" : true,
+      "size" : 0,
+      "cardinality" : 4,
+      "minValue" : "{\"element\": \"action\"}",
+      "maxValue" : "{\"element\": \"strategy\"}",
+      "errorMessage" : null
+    },
+    "otherApps" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 4,
+      "minValue" : "1",
+      "maxValue" : "4",
+      "errorMessage" : null
+    },
+    "paidAmountBucket" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 7,
+      "minValue" : "",
+      "maxValue" : "50",
+      "errorMessage" : null
+    },
+    "paidAmountSum" : {
+      "type" : "FLOAT",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : null,
+      "minValue" : null,
+      "maxValue" : null,
+      "errorMessage" : null
+    },
+    "paymentCount" : {
+      "type" : "LONG",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : null,
+      "minValue" : null,
+      "maxValue" : null,
+      "errorMessage" : null
+    },
+    "paymentsBucket" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 8,
+      "minValue" : "",
+      "maxValue" : "50",
+      "errorMessage" : null
+    },
+    "regDate" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 5,
+      "minValue" : "1491004800",
+      "maxValue" : "1501545600",
+      "errorMessage" : null
+    },
+    "sessionCount" : {
+      "type" : "LONG",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : null,
+      "minValue" : null,
+      "maxValue" : null,
+      "errorMessage" : null
+    }
+  },
+  "size" : 0,
+  "numRows" : 2498570,
+  "aggregators" : null,
+  "timestampSpec" : null,
+  "queryGranularity" : null,
+  "rollup" : null
+}, {
+  "id" : "player_explorer_s3_2017-08-12T00:00:00.000Z_2017-08-13T00:00:00.000Z_2017-08-14T09:30:49.933Z",
+  "intervals" : [ "2017-08-12T00:00:00.000Z/2017-08-13T00:00:00.000Z" ],
+  "columns" : {
+    "__time" : {
+      "type" : "LONG",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : null,
+      "minValue" : null,
+      "maxValue" : null,
+      "errorMessage" : null
+    },
+    "acquisitionSource" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 266,
+      "minValue" : "",
+      "maxValue" : "unityads_int",
+      "errorMessage" : null
+    },
+    "activeDaysBucket" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 7,
+      "minValue" : "0",
+      "maxValue" : "50",
+      "errorMessage" : null
+    },
+    "activeDaysSum" : {
+      "type" : "LONG",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : null,
+      "minValue" : null,
+      "maxValue" : null,
+      "errorMessage" : null
+    },
+    "age" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 95,
+      "minValue" : "10",
+      "maxValue" : "99",
+      "errorMessage" : null
+    },
+    "bundles" : {
+      "type" : "STRING",
+      "hasMultipleValues" : true,
+      "size" : 0,
+      "cardinality" : 1000,
+      "minValue" : "{\"element\": \"1001425491\"}",
+      "maxValue" : "{\"element\": \"www.mobilenetworkgroup.com\"}",
+      "errorMessage" : null
+    },
+    "count" : {
+      "type" : "LONG",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : null,
+      "minValue" : null,
+      "maxValue" : null,
+      "errorMessage" : null
+    },
+    "countryCode" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 250,
+      "minValue" : "AD",
+      "maxValue" : "ZW",
+      "errorMessage" : null
+    },
+    "deviceOs" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 6,
+      "minValue" : "Android",
+      "maxValue" : "iOS",
+      "errorMessage" : null
+    },
+    "deviceType" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 8,
+      "minValue" : "Desktop",
+      "maxValue" : "Tablet",
+      "errorMessage" : null
+    },
+    "genres" : {
+      "type" : "STRING",
+      "hasMultipleValues" : true,
+      "size" : 0,
+      "cardinality" : 4,
+      "minValue" : "{\"element\": \"action\"}",
+      "maxValue" : "{\"element\": \"strategy\"}",
+      "errorMessage" : null
+    },
+    "otherApps" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 4,
+      "minValue" : "1",
+      "maxValue" : "4",
+      "errorMessage" : null
+    },
+    "paidAmountBucket" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 7,
+      "minValue" : "",
+      "maxValue" : "50",
+      "errorMessage" : null
+    },
+    "paidAmountSum" : {
+      "type" : "FLOAT",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : null,
+      "minValue" : null,
+      "maxValue" : null,
+      "errorMessage" : null
+    },
+    "paymentCount" : {
+      "type" : "LONG",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : null,
+      "minValue" : null,
+      "maxValue" : null,
+      "errorMessage" : null
+    },
+    "paymentsBucket" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 8,
+      "minValue" : "",
+      "maxValue" : "50",
+      "errorMessage" : null
+    },
+    "regDate" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 5,
+      "minValue" : "1491004800",
+      "maxValue" : "1501545600",
+      "errorMessage" : null
+    },
+    "sessionCount" : {
+      "type" : "LONG",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : null,
+      "minValue" : null,
+      "maxValue" : null,
+      "errorMessage" : null
+    }
+  },
+  "size" : 0,
+  "numRows" : 2499994,
+  "aggregators" : null,
+  "timestampSpec" : null,
+  "queryGranularity" : null,
+  "rollup" : null
+}, {
+  "id" : "player_explorer_s3_2017-08-13T00:00:00.000Z_2017-08-14T00:00:00.000Z_2017-08-14T09:30:49.933Z",
+  "intervals" : [ "2017-08-13T00:00:00.000Z/2017-08-14T00:00:00.000Z" ],
+  "columns" : {
+    "__time" : {
+      "type" : "LONG",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : null,
+      "minValue" : null,
+      "maxValue" : null,
+      "errorMessage" : null
+    },
+    "acquisitionSource" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 266,
+      "minValue" : "",
+      "maxValue" : "unityads_int",
+      "errorMessage" : null
+    },
+    "activeDaysBucket" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 7,
+      "minValue" : "0",
+      "maxValue" : "50",
+      "errorMessage" : null
+    },
+    "activeDaysSum" : {
+      "type" : "LONG",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : null,
+      "minValue" : null,
+      "maxValue" : null,
+      "errorMessage" : null
+    },
+    "age" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 95,
+      "minValue" : "10",
+      "maxValue" : "99",
+      "errorMessage" : null
+    },
+    "bundles" : {
+      "type" : "STRING",
+      "hasMultipleValues" : true,
+      "size" : 0,
+      "cardinality" : 1000,
+      "minValue" : "{\"element\": \"1001425491\"}",
+      "maxValue" : "{\"element\": \"www.mobilenetworkgroup.com\"}",
+      "errorMessage" : null
+    },
+    "count" : {
+      "type" : "LONG",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : null,
+      "minValue" : null,
+      "maxValue" : null,
+      "errorMessage" : null
+    },
+    "countryCode" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 250,
+      "minValue" : "AD",
+      "maxValue" : "ZW",
+      "errorMessage" : null
+    },
+    "deviceOs" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 6,
+      "minValue" : "Android",
+      "maxValue" : "iOS",
+      "errorMessage" : null
+    },
+    "deviceType" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 8,
+      "minValue" : "Desktop",
+      "maxValue" : "Tablet",
+      "errorMessage" : null
+    },
+    "genres" : {
+      "type" : "STRING",
+      "hasMultipleValues" : true,
+      "size" : 0,
+      "cardinality" : 4,
+      "minValue" : "{\"element\": \"action\"}",
+      "maxValue" : "{\"element\": \"strategy\"}",
+      "errorMessage" : null
+    },
+    "otherApps" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 4,
+      "minValue" : "1",
+      "maxValue" : "4",
+      "errorMessage" : null
+    },
+    "paidAmountBucket" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 7,
+      "minValue" : "",
+      "maxValue" : "50",
+      "errorMessage" : null
+    },
+    "paidAmountSum" : {
+      "type" : "FLOAT",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : null,
+      "minValue" : null,
+      "maxValue" : null,
+      "errorMessage" : null
+    },
+    "paymentCount" : {
+      "type" : "LONG",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : null,
+      "minValue" : null,
+      "maxValue" : null,
+      "errorMessage" : null
+    },
+    "paymentsBucket" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 8,
+      "minValue" : "",
+      "maxValue" : "50",
+      "errorMessage" : null
+    },
+    "regDate" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 5,
+      "minValue" : "1491004800",
+      "maxValue" : "1501545600",
+      "errorMessage" : null
+    },
+    "sessionCount" : {
+      "type" : "LONG",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : null,
+      "minValue" : null,
+      "maxValue" : null,
+      "errorMessage" : null
+    }
+  },
+  "size" : 0,
+  "numRows" : 2499869,
+  "aggregators" : null,
+  "timestampSpec" : null,
+  "queryGranularity" : null,
+  "rollup" : null
+}, {
+  "id" : "player_explorer_s3_2017-08-14T00:00:00.000Z_2017-08-15T00:00:00.000Z_2017-08-14T09:30:49.933Z",
+  "intervals" : [ "2017-08-14T00:00:00.000Z/2017-08-15T00:00:00.000Z" ],
+  "columns" : {
+    "__time" : {
+      "type" : "LONG",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : null,
+      "minValue" : null,
+      "maxValue" : null,
+      "errorMessage" : null
+    },
+    "acquisitionSource" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 266,
+      "minValue" : "",
+      "maxValue" : "unityads_int",
+      "errorMessage" : null
+    },
+    "activeDaysBucket" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 7,
+      "minValue" : "0",
+      "maxValue" : "50",
+      "errorMessage" : null
+    },
+    "activeDaysSum" : {
+      "type" : "LONG",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : null,
+      "minValue" : null,
+      "maxValue" : null,
+      "errorMessage" : null
+    },
+    "age" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 95,
+      "minValue" : "10",
+      "maxValue" : "99",
+      "errorMessage" : null
+    },
+    "bundles" : {
+      "type" : "STRING",
+      "hasMultipleValues" : true,
+      "size" : 0,
+      "cardinality" : 1000,
+      "minValue" : "{\"element\": \"1001425491\"}",
+      "maxValue" : "{\"element\": \"www.mobilenetworkgroup.com\"}",
+      "errorMessage" : null
+    },
+    "count" : {
+      "type" : "LONG",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : null,
+      "minValue" : null,
+      "maxValue" : null,
+      "errorMessage" : null
+    },
+    "countryCode" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 250,
+      "minValue" : "AD",
+      "maxValue" : "ZW",
+      "errorMessage" : null
+    },
+    "deviceOs" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 6,
+      "minValue" : "Android",
+      "maxValue" : "iOS",
+      "errorMessage" : null
+    },
+    "deviceType" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 8,
+      "minValue" : "Desktop",
+      "maxValue" : "Tablet",
+      "errorMessage" : null
+    },
+    "genres" : {
+      "type" : "STRING",
+      "hasMultipleValues" : true,
+      "size" : 0,
+      "cardinality" : 4,
+      "minValue" : "{\"element\": \"action\"}",
+      "maxValue" : "{\"element\": \"strategy\"}",
+      "errorMessage" : null
+    },
+    "otherApps" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 4,
+      "minValue" : "1",
+      "maxValue" : "4",
+      "errorMessage" : null
+    },
+    "paidAmountBucket" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 7,
+      "minValue" : "",
+      "maxValue" : "50",
+      "errorMessage" : null
+    },
+    "paidAmountSum" : {
+      "type" : "FLOAT",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : null,
+      "minValue" : null,
+      "maxValue" : null,
+      "errorMessage" : null
+    },
+    "paymentCount" : {
+      "type" : "LONG",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : null,
+      "minValue" : null,
+      "maxValue" : null,
+      "errorMessage" : null
+    },
+    "paymentsBucket" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 8,
+      "minValue" : "",
+      "maxValue" : "50",
+      "errorMessage" : null
+    },
+    "regDate" : {
+      "type" : "STRING",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : 5,
+      "minValue" : "1491004800",
+      "maxValue" : "1501545600",
+      "errorMessage" : null
+    },
+    "sessionCount" : {
+      "type" : "LONG",
+      "hasMultipleValues" : false,
+      "size" : 0,
+      "cardinality" : null,
+      "minValue" : null,
+      "maxValue" : null,
+      "errorMessage" : null
+    }
+  },
+  "size" : 0,
+  "numRows" : 2498786,
+  "aggregators" : null,
+  "timestampSpec" : null,
+  "queryGranularity" : null,
+  "rollup" : null
+} ]
