@@ -11,7 +11,7 @@
   <description>A Druid Client for Java (mostly a thin wrapper around the existing one in druid-server)</description>
   <url>https://github.com/simplaex/java-druid-client</url>
 
-  <version>1.0.0</version>
+  <version>2017.12.17</version>
   <packaging>jar</packaging>
 
   <scm>
@@ -32,9 +32,9 @@
   <properties>
     <java.version>1.8</java.version>
     <lombok.version>1.16.18</lombok.version>
-    <druid.version>0.10.1</druid.version>
+    <druid.version>0.11.0</druid.version>
     <junit.version>4.12</junit.version>
-    <mockserver.version>3.10.8</mockserver.version>
+    <mockserver.version>5.3.0</mockserver.version>
   </properties>
 
   <organization>
@@ -129,6 +129,35 @@
           </execution>
         </executions>
       </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-shade-plugin</artifactId>
+        <version>3.1.0</version>
+        <executions>
+          <execution>
+            <phase>package</phase>
+            <goals>
+              <goal>shade</goal>
+            </goals>
+            <configuration>
+              <relocations>
+                <relocation>
+                  <pattern>io.netty</pattern>
+                  <shadedPattern>com.simplaex.clients.druid.shaded.netty</shadedPattern>
+                </relocation>
+                <relocation>
+                  <pattern>com.google.common</pattern>
+                  <shadedPattern>com.simplaex.clients.druid.shaded.guava</shadedPattern>
+                </relocation>
+                <relocation>
+                  <pattern>com.amazonaws</pattern>
+                  <shadedPattern>com.simplaex.clients.druid.shaded.aws</shadedPattern>
+                </relocation>
+              </relocations>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
     </plugins>
   </build>
 
@@ -167,6 +196,7 @@
       <version>${mockserver.version}</version>
       <scope>test</scope>
     </dependency>
+
   </dependencies>
 
 </project>

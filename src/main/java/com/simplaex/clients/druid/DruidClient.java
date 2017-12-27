@@ -6,7 +6,18 @@ import io.druid.query.QueryPlus;
 public interface DruidClient extends AutoCloseable {
 
   static DruidClient create(final String hostname, final int port) {
-    return new DruidClientImpl(hostname, port);
+    return create("http", hostname, port);
+  }
+
+  static DruidClient create(final String protocolScheme, final String hostname, final int port) {
+    switch (protocolScheme) {
+      case "http":
+      case "https":
+        break;
+      default:
+        throw new IllegalArgumentException("Unsupported protocol scheme: " + protocolScheme);
+    }
+    return new DruidClientImpl(protocolScheme, hostname, port);
   }
 
   default <T> DruidResult<T> run(Query<T> query) {
