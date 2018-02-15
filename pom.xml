@@ -11,7 +11,7 @@
   <description>A Druid Client for Java (mostly a thin wrapper around the existing one in druid-server)</description>
   <url>https://github.com/simplaex/java-druid-client</url>
 
-  <version>2017.12.17</version>
+  <version>2017.12.27</version>
   <packaging>jar</packaging>
 
   <scm>
@@ -131,6 +131,19 @@
       </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-failsafe-plugin</artifactId>
+        <version>2.20.1</version>
+        <executions>
+          <execution>
+            <goals>
+              <goal>integration-test</goal>
+              <goal>verify</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-shade-plugin</artifactId>
         <version>3.1.0</version>
         <executions>
@@ -140,18 +153,38 @@
               <goal>shade</goal>
             </goals>
             <configuration>
+              <minimizeJar>false</minimizeJar>
+              <filters>
+                <filter>
+                  <artifact>*:*</artifact>
+                  <excludes>
+                    <exclude>META-INF/*.SF</exclude>
+                    <exclude>META-INF/*.DSA</exclude>
+                    <exclude>META-INF/*.RSA</exclude>
+                    <exclude>META-INF/*.INF</exclude>
+                  </excludes>
+                </filter>
+              </filters>
               <relocations>
                 <relocation>
-                  <pattern>io.netty</pattern>
-                  <shadedPattern>com.simplaex.clients.druid.shaded.netty</shadedPattern>
+                  <pattern>io</pattern>
+                  <shadedPattern>com.simplaex.clients.druid.shaded.io</shadedPattern>
                 </relocation>
                 <relocation>
-                  <pattern>com.google.common</pattern>
-                  <shadedPattern>com.simplaex.clients.druid.shaded.guava</shadedPattern>
+                  <pattern>com.google</pattern>
+                  <shadedPattern>com.simplaex.clients.druid.shaded.google</shadedPattern>
                 </relocation>
                 <relocation>
-                  <pattern>com.amazonaws</pattern>
-                  <shadedPattern>com.simplaex.clients.druid.shaded.aws</shadedPattern>
+                  <pattern>com.fasterxml</pattern>
+                  <shadedPattern>com.simplaex.clients.druid.shaded.fasterxml</shadedPattern>
+                </relocation>
+                <relocation>
+                  <pattern>org</pattern>
+                  <shadedPattern>com.simplaex.clients.druid.shaded.org</shadedPattern>
+                </relocation>
+                <relocation>
+                  <pattern>net</pattern>
+                  <shadedPattern>com.simplaex.clients.druid.shaded.net</shadedPattern>
                 </relocation>
               </relocations>
             </configuration>
@@ -187,6 +220,13 @@
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <version>${junit.version}</version>
+      <scope>test</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-nop</artifactId>
+      <version>1.7.25</version>
       <scope>test</scope>
     </dependency>
 

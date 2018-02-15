@@ -1,6 +1,7 @@
 package com.simplaex.clients.druid;
 
 
+import com.google.common.io.ByteStreams;
 import io.druid.query.Druids;
 import io.druid.query.Result;
 import io.druid.query.metadata.metadata.AllColumnIncluderator;
@@ -23,7 +24,7 @@ import java.nio.charset.StandardCharsets;
 import java.time.Instant;
 import java.util.*;
 
-public class DruidClientTest {
+public class DruidClientIT {
 
   private static ClientAndServer mockServer;
 
