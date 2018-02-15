@@ -3,6 +3,7 @@ package com.simplaex.clients.druid;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.common.base.Supplier;
 import com.metamx.common.lifecycle.Lifecycle;
+import com.metamx.emitter.core.Emitter;
 import com.metamx.emitter.core.NoopEmitter;
 import com.metamx.emitter.service.ServiceEmitter;
 import com.metamx.http.client.HttpClient;
@@ -63,9 +64,10 @@ public final class DruidClientImpl implements DruidClient {
 
   public DruidClientImpl(
       final String hostname,
-      final int port
+      final int port,
+      final Emitter emitter
   ) {
-    final ServiceEmitter serviceEmitter = createServiceEmitter(hostname);
+    final ServiceEmitter serviceEmitter = createServiceEmitter(hostname, emitter);
     this.queryManager = new QueryManager();
     this.executorService = createExecutorService();
     this.druidClient = createDruidClient(hostname, port, queryManager, serviceEmitter, executorService);
@@ -94,11 +96,11 @@ public final class DruidClientImpl implements DruidClient {
     );
   }
 
-  private static ServiceEmitter createServiceEmitter(final String host) {
+  private static ServiceEmitter createServiceEmitter(final String host, final Emitter emitter) {
     return new ServiceEmitter(
         "druid",
         host,
-        new NoopEmitter()
+        emitter
     );
   }
 
