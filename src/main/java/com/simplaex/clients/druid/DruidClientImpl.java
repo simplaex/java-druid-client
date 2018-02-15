@@ -4,7 +4,6 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.common.base.Supplier;
 import com.metamx.common.lifecycle.Lifecycle;
 import com.metamx.emitter.core.Emitter;
-import com.metamx.emitter.core.NoopEmitter;
 import com.metamx.emitter.service.ServiceEmitter;
 import com.metamx.http.client.HttpClient;
 import com.metamx.http.client.HttpClientConfig;
@@ -63,9 +62,9 @@ public final class DruidClientImpl implements DruidClient {
   private final DirectDruidClient druidClient;
 
   public DruidClientImpl(
-      final String hostname,
-      final int port,
-      final Emitter emitter
+    final String hostname,
+    final int port,
+    final Emitter emitter
   ) {
     final ServiceEmitter serviceEmitter = createServiceEmitter(hostname, emitter);
     this.queryManager = new QueryManager();
@@ -78,37 +77,37 @@ public final class DruidClientImpl implements DruidClient {
   }
 
   private static DirectDruidClient createDruidClient(
-      final String hostname,
-      final int port,
-      final QueryWatcher queryWatcher,
-      final ServiceEmitter serviceEmitter,
-      final ExecutorService executorService
+    final String hostname,
+    final int port,
+    final QueryWatcher queryWatcher,
+    final ServiceEmitter serviceEmitter,
+    final ExecutorService executorService
   ) {
     final ObjectMapper objectMapper = new DefaultObjectMapper();
     final String host = String.format("%s:%d", hostname, port);
     return new DirectDruidClient(
-        createQueryToolChestWarehouse(objectMapper, serviceEmitter, queryWatcher, executorService),
-        queryWatcher,
-        objectMapper,
-        createHttpClient(),
-        host,
-        serviceEmitter
+      createQueryToolChestWarehouse(objectMapper, serviceEmitter, queryWatcher, executorService),
+      queryWatcher,
+      objectMapper,
+      createHttpClient(),
+      host,
+      serviceEmitter
     );
   }
 
   private static ServiceEmitter createServiceEmitter(final String host, final Emitter emitter) {
     return new ServiceEmitter(
-        "druid",
-        host,
-        emitter
+      "druid",
+      host,
+      emitter
     );
   }
 
   private static QueryToolChestWarehouse createQueryToolChestWarehouse(
-      final ObjectMapper objectMapper,
-      final ServiceEmitter serviceEmitter,
-      final QueryWatcher queryWatcher,
-      final ExecutorService executorService
+    final ObjectMapper objectMapper,
+    final ServiceEmitter serviceEmitter,
+    final QueryWatcher queryWatcher,
+    final ExecutorService executorService
   ) {
 
     final Map<Class<? extends Query>, QueryToolChest> chestMap = new HashMap<>();
@@ -116,16 +115,16 @@ public final class DruidClientImpl implements DruidClient {
     // reusable things
 
     final GenericQueryMetricsFactory genericQueryMetricsFactory =
-        new DefaultGenericQueryMetricsFactory(objectMapper);
+      new DefaultGenericQueryMetricsFactory(objectMapper);
 
     final IntervalChunkingQueryRunnerDecorator intervalChunkingQueryRunnerDecorator =
-        new IntervalChunkingQueryRunnerDecorator(executorService, queryWatcher, serviceEmitter);
+      new IntervalChunkingQueryRunnerDecorator(executorService, queryWatcher, serviceEmitter);
 
 
     // datasource metadata queries
 
     final DataSourceQueryQueryToolChest dataSourceQueryQueryToolChest =
-        new DataSourceQueryQueryToolChest(genericQueryMetricsFactory);
+      new DataSourceQueryQueryToolChest(genericQueryMetricsFactory);
 
     chestMap.put(DataSourceMetadataQuery.class, dataSourceQueryQueryToolChest);
 
@@ -133,27 +132,27 @@ public final class DruidClientImpl implements DruidClient {
     // groupBy queries
 
     final GroupByQueryMetricsFactory groupByQueryMetricsFactory =
-        new DefaultGroupByQueryMetricsFactory(objectMapper);
+      new DefaultGroupByQueryMetricsFactory(objectMapper);
 
     @SuppressWarnings("Guava") final Supplier<GroupByQueryConfig> groupByQueryConfigSupplier =
-        GroupByQueryConfig::new;
+      GroupByQueryConfig::new;
 
     final NonBlockingPool<ByteBuffer> v1StrategyByteBufferPool =
-        new StupidPool<>("druid-groupby-strategy-v1-bytebuffer-pool", () -> ByteBuffer.allocate(BYTE_BUFFER_CAPACITY));
+      new StupidPool<>("druid-groupby-strategy-v1-bytebuffer-pool", () -> ByteBuffer.allocate(BYTE_BUFFER_CAPACITY));
 
     final NonBlockingPool<ByteBuffer> queryEngineBufferPool =
-        new StupidPool<>("druid-groupby-queryengine-bytebuffer-pool", () -> ByteBuffer.allocate(BYTE_BUFFER_CAPACITY));
+      new StupidPool<>("druid-groupby-queryengine-bytebuffer-pool", () -> ByteBuffer.allocate(BYTE_BUFFER_CAPACITY));
 
     final GroupByQueryEngine groupByQueryEngine =
-        new GroupByQueryEngine(groupByQueryConfigSupplier, queryEngineBufferPool);
+      new GroupByQueryEngine(groupByQueryConfigSupplier, queryEngineBufferPool);
 
     final GroupByStrategyV1 groupByStrategyV1 =
-        new GroupByStrategyV1(
-            groupByQueryConfigSupplier,
-            groupByQueryEngine,
-            queryWatcher,
-            v1StrategyByteBufferPool
-        );
+      new GroupByStrategyV1(
+        groupByQueryConfigSupplier,
+        groupByQueryEngine,
+        queryWatcher,
+        v1StrategyByteBufferPool
+      );
 
     final DruidProcessingConfig druidProcessingConfig = new DruidProcessingConfig() {
       @Override
@@ -163,37 +162,37 @@ public final class DruidClientImpl implements DruidClient {
     };
 
     final NonBlockingPool<ByteBuffer> v2StrategyByteBufferPool =
-        new StupidPool<>(
-            "druid-groupby-strategy-v2-bytebuffer-pool",
-            () -> ByteBuffer.allocate(BYTE_BUFFER_CAPACITY)
-        );
+      new StupidPool<>(
+        "druid-groupby-strategy-v2-bytebuffer-pool",
+        () -> ByteBuffer.allocate(BYTE_BUFFER_CAPACITY)
+      );
 
     final BlockingPool<ByteBuffer> mergeBufferPool =
-        new DefaultBlockingPool<>(() -> ByteBuffer.allocate(MERGE_BUFFER_CAPACITY), MERGE_BUFFER_LIMIT);
+      new DefaultBlockingPool<>(() -> ByteBuffer.allocate(MERGE_BUFFER_CAPACITY), MERGE_BUFFER_LIMIT);
 
     final GroupByStrategyV2 groupByStrategyV2 =
-        new GroupByStrategyV2(
-            druidProcessingConfig,
-            groupByQueryConfigSupplier,
-            v2StrategyByteBufferPool,
-            mergeBufferPool,
-            objectMapper,
-            queryWatcher
-        );
+      new GroupByStrategyV2(
+        druidProcessingConfig,
+        groupByQueryConfigSupplier,
+        v2StrategyByteBufferPool,
+        mergeBufferPool,
+        objectMapper,
+        queryWatcher
+      );
 
     final GroupByStrategySelector groupByStrategySelector =
-        new GroupByStrategySelector(
-            groupByQueryConfigSupplier,
-            groupByStrategyV1,
-            groupByStrategyV2
-        );
+      new GroupByStrategySelector(
+        groupByQueryConfigSupplier,
+        groupByStrategyV1,
+        groupByStrategyV2
+      );
 
     final GroupByQueryQueryToolChest groupByQueryQueryToolChest =
-        new GroupByQueryQueryToolChest(
-            groupByStrategySelector,
-            intervalChunkingQueryRunnerDecorator,
-            groupByQueryMetricsFactory
-        );
+      new GroupByQueryQueryToolChest(
+        groupByStrategySelector,
+        intervalChunkingQueryRunnerDecorator,
+        groupByQueryMetricsFactory
+      );
 
     chestMap.put(GroupByQuery.class, groupByQueryQueryToolChest);
 
@@ -201,13 +200,13 @@ public final class DruidClientImpl implements DruidClient {
     // search queries
 
     final SearchQueryConfig searchQueryConfig =
-        new SearchQueryConfig();
+      new SearchQueryConfig();
 
     final SearchQueryQueryToolChest searchQueryQueryToolChest =
-        new SearchQueryQueryToolChest(
-            searchQueryConfig,
-            intervalChunkingQueryRunnerDecorator
-        );
+      new SearchQueryQueryToolChest(
+        searchQueryConfig,
+        intervalChunkingQueryRunnerDecorator
+      );
 
     chestMap.put(SearchQuery.class, searchQueryQueryToolChest);
 
@@ -215,13 +214,13 @@ public final class DruidClientImpl implements DruidClient {
     // segment metadata queries
 
     final SegmentMetadataQueryConfig segmentMetadataQueryConfig =
-        new SegmentMetadataQueryConfig();
+      new SegmentMetadataQueryConfig();
 
     final SegmentMetadataQueryQueryToolChest segementMetadataToolChest =
-        new SegmentMetadataQueryQueryToolChest(
-            segmentMetadataQueryConfig,
-            genericQueryMetricsFactory
-        );
+      new SegmentMetadataQueryQueryToolChest(
+        segmentMetadataQueryConfig,
+        genericQueryMetricsFactory
+      );
 
     chestMap.put(SegmentMetadataQuery.class, segementMetadataToolChest);
 
@@ -229,15 +228,15 @@ public final class DruidClientImpl implements DruidClient {
     // select queries
 
     @SuppressWarnings("Guava") final Supplier<SelectQueryConfig> selectQueryConfigSupplier =
-        () -> new SelectQueryConfig(null);
+      () -> new SelectQueryConfig(null);
 
     final SelectQueryQueryToolChest selectQueryQueryToolChest =
-        new SelectQueryQueryToolChest(
-            objectMapper,
-            intervalChunkingQueryRunnerDecorator,
-            selectQueryConfigSupplier,
-            genericQueryMetricsFactory
-        );
+      new SelectQueryQueryToolChest(
+        objectMapper,
+        intervalChunkingQueryRunnerDecorator,
+        selectQueryConfigSupplier,
+        genericQueryMetricsFactory
+      );
 
     chestMap.put(SelectQuery.class, selectQueryQueryToolChest);
 
@@ -245,7 +244,7 @@ public final class DruidClientImpl implements DruidClient {
     // timeboundary queries
 
     final TimeBoundaryQueryQueryToolChest timeBoundaryQueryQueryToolChest =
-        new TimeBoundaryQueryQueryToolChest();
+      new TimeBoundaryQueryQueryToolChest();
 
     chestMap.put(TimeBoundaryQuery.class, timeBoundaryQueryQueryToolChest);
 
@@ -253,13 +252,13 @@ public final class DruidClientImpl implements DruidClient {
     // timeseries queries
 
     final TimeseriesQueryMetricsFactory timeseriesMetricsFactory =
-        new DefaultTimeseriesQueryMetricsFactory(objectMapper);
+      new DefaultTimeseriesQueryMetricsFactory(objectMapper);
 
     final TimeseriesQueryQueryToolChest timeseriesToolChest =
-        new TimeseriesQueryQueryToolChest(
-            intervalChunkingQueryRunnerDecorator,
-            timeseriesMetricsFactory
-        );
+      new TimeseriesQueryQueryToolChest(
+        intervalChunkingQueryRunnerDecorator,
+        timeseriesMetricsFactory
+      );
 
     chestMap.put(TimeseriesQuery.class, timeseriesToolChest);
 
@@ -269,14 +268,14 @@ public final class DruidClientImpl implements DruidClient {
     final TopNQueryConfig topNQueryConfig = new TopNQueryConfig();
 
     final TopNQueryMetricsFactory topNQueryMetricsFactory =
-        new DefaultTopNQueryMetricsFactory(objectMapper);
+      new DefaultTopNQueryMetricsFactory(objectMapper);
 
     final TopNQueryQueryToolChest topNQueryQueryToolChest =
-        new TopNQueryQueryToolChest(
-            topNQueryConfig,
-            intervalChunkingQueryRunnerDecorator,
-            topNQueryMetricsFactory
-        );
+      new TopNQueryQueryToolChest(
+        topNQueryConfig,
+        intervalChunkingQueryRunnerDecorator,
+        topNQueryMetricsFactory
+      );
 
     chestMap.put(TopNQuery.class, topNQueryQueryToolChest);
 
@@ -288,8 +287,8 @@ public final class DruidClientImpl implements DruidClient {
     final HttpClientConfig httpClientConfig = HttpClientConfig.builder().build();
     final Lifecycle lifecycle = new Lifecycle();
     return HttpClientInit.createClient(
-        httpClientConfig,
-        lifecycle
+      httpClientConfig,
+      lifecycle
     );
   }
 
@@ -297,14 +296,14 @@ public final class DruidClientImpl implements DruidClient {
   public <T> DruidResult<T> run(final QueryPlus<T> queryPlus) {
     final Query<T> query = queryPlus.getQuery();
     final Query<T> queryWithId =
-        query.getId() == null ? query.withId(UUID.randomUUID().toString()) : query;
+      query.getId() == null ? query.withId(UUID.randomUUID().toString()) : query;
     final long startTimeMillis = System.currentTimeMillis();
     final Map<String, Object> responseContext =
-        DirectDruidClient.makeResponseContextForQuery(queryWithId, startTimeMillis);
+      DirectDruidClient.makeResponseContextForQuery(queryWithId, startTimeMillis);
     final QueryPlus<T> finalQuery = queryPlus.withQuery(queryWithId);
     //noinspection unchecked
     final Sequence<T> resultSequence =
-        druidClient.run(finalQuery, responseContext);
+      druidClient.run(finalQuery, responseContext);
     return new DruidResult<>(resultSequence, finalQuery);
   }
 
