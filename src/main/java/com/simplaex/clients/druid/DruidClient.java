@@ -35,7 +35,7 @@ public interface DruidClient extends AutoCloseable {
     return new DruidClientImpl(hostname, port, eventEmitter);
   }
 
-  default <T> DruidResult<T> run(Query<T> query) {
+  default <T> DruidResult<T> run(final Query<T> query) {
     return run(QueryPlus.wrap(query));
   }
 

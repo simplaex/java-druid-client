@@ -18,7 +18,7 @@ public class DruidResult<T> {
 
   public List<T> toList() {
     final Yielder<ArrayList<T>> resultYielder = sequence.toYielder(
-        new ArrayList<T>(),
+      new ArrayList<>(),
         new YieldingAccumulator<ArrayList<T>, T>() {
           @Override
           public ArrayList<T> accumulate(final ArrayList<T> accumulated, final T in) {
