@@ -11,7 +11,7 @@
   <description>A Druid Client for Java (mostly a thin wrapper around the existing one in druid-server)</description>
   <url>https://github.com/simplaex/java-druid-client</url>
 
-  <version>1.0.1</version>
+  <version>1.1.0</version>
   <packaging>jar</packaging>
 
   <scm>
@@ -19,7 +19,7 @@
     <developerConnection>scm:git:ssh://git@github.com:simplaex/dummies.git
     </developerConnection>
     <url>https://github.com/simplaex/dummies</url>
-    <tag>v1.0.0</tag>
+    <tag>v1.1.0</tag>
   </scm>
 
   <licenses>
