@@ -8,6 +8,7 @@ import com.metamx.emitter.service.ServiceEmitter;
 import com.metamx.http.client.HttpClient;
 import com.metamx.http.client.HttpClientConfig;
 import com.metamx.http.client.HttpClientInit;
+import com.simplaex.bedrock.Promise;
 import io.druid.client.DirectDruidClient;
 import io.druid.collections.BlockingPool;
 import io.druid.collections.DefaultBlockingPool;
@@ -41,12 +42,12 @@ import io.druid.query.topn.*;
 import io.druid.server.QueryManager;
 
 import java.nio.ByteBuffer;
+import java.time.Duration;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.UUID;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.concurrent.TimeUnit;
+import java.util.concurrent.*;
 
 public final class DruidClientImpl implements DruidClient {
 
@@ -61,19 +62,11 @@ public final class DruidClientImpl implements DruidClient {
 
   private final DirectDruidClient druidClient;
 
-  public DruidClientImpl(
-    final String hostname,
-    final int port,
-    final Emitter emitter
-  ) {
-    final ServiceEmitter serviceEmitter = createServiceEmitter(hostname, emitter);
+  DruidClientImpl(final DruidClientConfig config) {
+    final ServiceEmitter serviceEmitter = createServiceEmitter(config.getHost(), config.getEventEmitter());
     this.queryManager = new QueryManager();
-    this.executorService = createExecutorService();
-    this.druidClient = createDruidClient(hostname, port, queryManager, serviceEmitter, executorService);
-  }
-
-  private static ExecutorService createExecutorService() {
-    return Executors.newWorkStealingPool();
+    this.executorService = config.getExecutorService();
+    this.druidClient = createDruidClient(config.getHost(), config.getPort(), queryManager, serviceEmitter, executorService);
   }
 
   private static DirectDruidClient createDruidClient(
@@ -305,6 +298,24 @@ public final class DruidClientImpl implements DruidClient {
     final Sequence<T> resultSequence =
       druidClient.run(finalQuery, responseContext);
     return new DruidResult<>(resultSequence, finalQuery);
+  }
+
+  @Override
+  public <T> Promise<List<T>> run(final QueryPlus<T> queryPlus, final Duration timeout) {
+    final Promise<List<T>> promise = Promise.promise();
+    final Future<List<T>> future = executorService.submit(() -> {
+      final DruidResult<T> result = run(queryPlus);
+      return result.toList();
+    });
+    executorService.submit(() -> {
+      try {
+        final List<T> resultList = future.get(timeout.toMillis(), TimeUnit.MILLISECONDS);
+        promise.fulfill(resultList);
+      } catch (final Exception exc) {
+        promise.fail(exc);
+      }
+    });
+    return promise;
   }
 
   @Override

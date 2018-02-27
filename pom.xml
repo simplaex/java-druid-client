@@ -11,7 +11,7 @@
   <description>A Druid Client for Java (mostly a thin wrapper around the existing one in druid-server)</description>
   <url>https://github.com/simplaex/java-druid-client</url>
 
-  <version>1.1.0</version>
+  <version>1.2.0</version>
   <packaging>jar</packaging>
 
   <scm>
@@ -145,6 +145,12 @@
           <artifactId>log4j-slf4j-impl</artifactId>
         </exclusion>
       </exclusions>
+    </dependency>
+
+    <dependency>
+      <groupId>com.simplaex</groupId>
+      <artifactId>bedrock</artifactId>
+      <version>2018.02.27</version>
     </dependency>
 
     <dependency>
