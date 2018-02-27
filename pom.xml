@@ -19,7 +19,7 @@
     <developerConnection>scm:git:ssh://git@github.com:simplaex/dummies.git
     </developerConnection>
     <url>https://github.com/simplaex/dummies</url>
-    <tag>v1.1.0</tag>
+    <tag>v1.2.0</tag>
   </scm>
 
   <licenses>
