@@ -5,6 +5,6 @@
     <dependency>
       <groupId>com.simplaex</groupId>
       <artifactId>java-druid-client</artifactId>
-      <version>1.0.0</version>
+      <version>1.2.2</version>
     </dependency>
 
