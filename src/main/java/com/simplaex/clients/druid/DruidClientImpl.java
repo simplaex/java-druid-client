@@ -41,6 +41,8 @@ import io.druid.query.timeseries.TimeseriesQueryQueryToolChest;
 import io.druid.query.topn.*;
 import io.druid.server.QueryManager;
 
+import javax.annotation.Nonnull;
+import javax.annotation.Nullable;
 import java.nio.ByteBuffer;
 import java.time.Duration;
 import java.util.HashMap;
@@ -285,8 +287,9 @@ public final class DruidClientImpl implements DruidClient {
     );
   }
 
+  @Nonnull
   @Override
-  public <T> DruidResult<T> run(final QueryPlus<T> queryPlus) {
+  public <T> DruidResult<T> run(@Nonnull final QueryPlus<T> queryPlus) {
     final Query<T> query = queryPlus.getQuery();
     final Query<T> queryWithId =
       query.getId() == null ? query.withId(UUID.randomUUID().toString()) : query;
@@ -300,26 +303,39 @@ public final class DruidClientImpl implements DruidClient {
     return new DruidResult<>(resultSequence, finalQuery);
   }
 
+  @Nonnull
   @Override
-  public <T> Promise<List<T>> run(final QueryPlus<T> queryPlus, final Duration timeout) {
+  public <T> Promise<List<T>> run(@Nonnull final QueryPlus<T> queryPlus, @Nullable final Duration timeout) {
     final Promise<List<T>> promise = Promise.promise();
-    final Future<List<T>> future = executorService.submit(() -> {
-      final DruidResult<T> result = run(queryPlus);
-      return result.toList();
-    });
-    executorService.submit(() -> {
-      try {
-        final List<T> resultList = future.get(timeout.toMillis(), TimeUnit.MILLISECONDS);
-        promise.fulfill(resultList);
-      } catch (final Exception exc) {
-        promise.fail(exc);
-      }
-    });
+    if (timeout == null || timeout.isZero() || timeout.isNegative()) {
+      executorService.submit(() -> {
+        try {
+          final DruidResult<T> result = run(queryPlus);
+          final List<T> resultList = result.toList();
+          promise.fulfill(resultList);
+        } catch (final Exception exc) {
+          promise.fail(exc);
+        }
+      });
+    } else {
+      final Future<List<T>> future = executorService.submit(() -> {
+        final DruidResult<T> result = run(queryPlus);
+        return result.toList();
+      });
+      executorService.submit(() -> {
+        try {
+          final List<T> resultList = future.get(timeout.toMillis(), TimeUnit.MILLISECONDS);
+          promise.fulfill(resultList);
+        } catch (final Exception exc) {
+          promise.fail(exc);
+        }
+      });
+    }
     return promise;
   }
 
   @Override
-  public void cancel(final DruidResult<?> druidResult) {
+  public void cancel(@Nonnull final DruidResult<?> druidResult) {
     queryManager.cancelQuery(druidResult.getQueryId());
   }
 

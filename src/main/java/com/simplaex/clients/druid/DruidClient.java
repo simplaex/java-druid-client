@@ -6,6 +6,9 @@ import com.simplaex.bedrock.Promise;
 import io.druid.query.Query;
 import io.druid.query.QueryPlus;
 
+import javax.annotation.Nonnegative;
+import javax.annotation.Nonnull;
+import javax.annotation.Nullable;
 import java.time.Duration;
 import java.util.List;
 
@@ -18,7 +21,7 @@ public interface DruidClient extends AutoCloseable {
     default void start() {
     }
 
-    void emit(Event var1);
+    void emit(Event event);
 
     @Override
     default void flush() {
@@ -30,30 +33,36 @@ public interface DruidClient extends AutoCloseable {
 
   }
 
-  static DruidClient create(final String hostname, final int port) {
+  @Nonnull
+  static DruidClient create(final @Nonnull String hostname, final @Nonnegative int port) {
     return create(DruidClientConfig.builder().host(hostname).port(port).build());
   }
 
-  static DruidClient create(final String hostname, final int port, final EventEmitter eventEmitter) {
+  @Nonnull
+  static DruidClient create(final @Nonnull String hostname, final @Nonnegative int port, final @Nonnull EventEmitter eventEmitter) {
     return new DruidClientImpl(DruidClientConfig.builder().host(hostname).port(port).eventEmitter(eventEmitter).build());
   }
 
-  static DruidClient create(final DruidClientConfig config) {
+  @Nonnull
+  static DruidClient create(final @Nonnull DruidClientConfig config) {
     return new DruidClientImpl(config);
   }
 
-  default <T> DruidResult<T> run(final Query<T> query) {
+  @Nonnull
+  default <T> DruidResult<T> run(final @Nonnull Query<T> query) {
     return run(QueryPlus.wrap(query));
   }
 
-  <T> DruidResult<T> run(QueryPlus<T> queryPlus);
+  @Nonnull
+  <T> DruidResult<T> run(@Nonnull QueryPlus<T> queryPlus);
 
-  void cancel(DruidResult<?> druidResult);
+  void cancel(@Nonnull DruidResult<?> druidResult);
 
-  default <T> Promise<List<T>> run(final Query<T> query, final Duration timeout) {
+  @Nonnull
+  default <T> Promise<List<T>> run(final @Nonnull Query<T> query, final @Nullable Duration timeout) {
     return run(QueryPlus.wrap(query), timeout);
   }
 
-  <T> Promise<List<T>> run(QueryPlus<T> queryPlus, Duration timeout);
+  <T> Promise<List<T>> run(@Nonnull QueryPlus<T> queryPlus, @Nullable Duration timeout);
 
 }
