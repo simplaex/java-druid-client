@@ -1,4 +1,4 @@
-# java-druid-client
+# java-druid-client [![Build Status](https://travis-ci.org/simplaex/java-druid-client.svg?branch=master)](https://travis-ci.org/simplaex/java-druid-client)
 
 ## Java/Maven
 
