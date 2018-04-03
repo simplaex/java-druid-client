@@ -1,12 +1,12 @@
 test: clean
-	mvn verify
+	mvn -B verify
 
 clean:
-	mvn clean
+	mvn -B clean
 	rm -rf coverage
 
 publish: clean
-	mvn deploy
+	mvn -B -Prelease deploy
 
 purge: clean
 	rm -rf .idea *.iml pom.xml.releaseBackup release.properties
