@@ -1,5 +1,7 @@
 package com.simplaex.clients.druid;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
+import io.druid.jackson.DefaultObjectMapper;
 import lombok.*;
 
 import javax.annotation.Nonnegative;
@@ -15,11 +17,21 @@ public class DruidClientConfig {
   @Getter
   private final String host;
   private final Integer port;
+  private final ObjectMapper objectMapper;
 
   private final Supplier<ExecutorService> executorServiceFactory;
   private final ExecutorService executorService;
 
   private final DruidClient.EventEmitter eventEmitter;
+
+
+  public ObjectMapper getObjectMapper() {
+    if (objectMapper == null) {
+      return new DefaultObjectMapper();
+    } else {
+      return objectMapper;
+    }
+  }
 
   @Nonnull
   public ExecutorService getExecutorService() {

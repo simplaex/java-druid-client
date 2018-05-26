@@ -68,7 +68,8 @@ public final class DruidClientImpl implements DruidClient {
     final ServiceEmitter serviceEmitter = createServiceEmitter(config.getHost(), config.getEventEmitter());
     this.queryManager = new QueryManager();
     this.executorService = config.getExecutorService();
-    this.druidClient = createDruidClient(config.getHost(), config.getPort(), queryManager, serviceEmitter, executorService);
+    this.druidClient = createDruidClient(config.getHost(), config.getPort(), queryManager, serviceEmitter, executorService,
+      config.getObjectMapper());
   }
 
   private static DirectDruidClient createDruidClient(
@@ -76,9 +77,9 @@ public final class DruidClientImpl implements DruidClient {
     final int port,
     final QueryWatcher queryWatcher,
     final ServiceEmitter serviceEmitter,
-    final ExecutorService executorService
+    final ExecutorService executorService,
+    final ObjectMapper objectMapper
   ) {
-    final ObjectMapper objectMapper = new DefaultObjectMapper();
     final String host = String.format("%s:%d", hostname, port);
     return new DirectDruidClient(
       createQueryToolChestWarehouse(objectMapper, serviceEmitter, queryWatcher, executorService),
