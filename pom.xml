@@ -32,10 +32,10 @@
   <properties>
     <java.version>1.8</java.version>
     <lombok.version>1.16.18</lombok.version>
-    <druid.version>0.10.1</druid.version>
+    <druid.version>0.12.1</druid.version>
     <bedrock.version>2018.04.04</bedrock.version>
     <junit.version>4.12</junit.version>
-    <mockserver.version>3.10.8</mockserver.version>
+    <mockserver.version>3.10.4</mockserver.version>
   </properties>
 
   <organization>

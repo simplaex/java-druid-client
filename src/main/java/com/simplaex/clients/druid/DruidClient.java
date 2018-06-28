@@ -1,8 +1,9 @@
 package com.simplaex.clients.druid;
 
-import com.metamx.emitter.core.Emitter;
-import com.metamx.emitter.core.Event;
 import com.simplaex.bedrock.Promise;
+
+import io.druid.java.util.emitter.core.Emitter;
+import io.druid.java.util.emitter.core.Event;
 import io.druid.query.Query;
 import io.druid.query.QueryPlus;
 

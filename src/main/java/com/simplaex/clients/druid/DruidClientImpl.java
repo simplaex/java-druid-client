@@ -2,20 +2,19 @@ package com.simplaex.clients.druid;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.common.base.Supplier;
-import com.metamx.common.lifecycle.Lifecycle;
-import com.metamx.emitter.core.Emitter;
-import com.metamx.emitter.service.ServiceEmitter;
-import com.metamx.http.client.HttpClient;
-import com.metamx.http.client.HttpClientConfig;
-import com.metamx.http.client.HttpClientInit;
 import com.simplaex.bedrock.Promise;
 import io.druid.client.DirectDruidClient;
 import io.druid.collections.BlockingPool;
 import io.druid.collections.DefaultBlockingPool;
 import io.druid.collections.NonBlockingPool;
 import io.druid.collections.StupidPool;
-import io.druid.jackson.DefaultObjectMapper;
 import io.druid.java.util.common.guava.Sequence;
+import io.druid.java.util.common.lifecycle.Lifecycle;
+import io.druid.java.util.emitter.core.Emitter;
+import io.druid.java.util.emitter.service.ServiceEmitter;
+import io.druid.java.util.http.client.HttpClient;
+import io.druid.java.util.http.client.HttpClientConfig;
+import io.druid.java.util.http.client.HttpClientInit;
 import io.druid.query.*;
 import io.druid.query.datasourcemetadata.DataSourceMetadataQuery;
 import io.druid.query.datasourcemetadata.DataSourceQueryQueryToolChest;
@@ -27,8 +26,8 @@ import io.druid.query.metadata.SegmentMetadataQueryConfig;
 import io.druid.query.metadata.SegmentMetadataQueryQueryToolChest;
 import io.druid.query.metadata.metadata.SegmentMetadataQuery;
 import io.druid.query.search.SearchQueryQueryToolChest;
-import io.druid.query.search.search.SearchQuery;
-import io.druid.query.search.search.SearchQueryConfig;
+import io.druid.query.search.SearchQuery;
+import io.druid.query.search.SearchQueryConfig;
 import io.druid.query.select.SelectQuery;
 import io.druid.query.select.SelectQueryConfig;
 import io.druid.query.select.SelectQueryQueryToolChest;
@@ -86,8 +85,8 @@ public final class DruidClientImpl implements DruidClient {
       queryWatcher,
       objectMapper,
       createHttpClient(),
-      host,
-      serviceEmitter
+      "http",
+      host, serviceEmitter
     );
   }
 
@@ -192,7 +191,6 @@ public final class DruidClientImpl implements DruidClient {
 
     chestMap.put(GroupByQuery.class, groupByQueryQueryToolChest);
 
-
     // search queries
 
     final SearchQueryConfig searchQueryConfig =
@@ -230,8 +228,7 @@ public final class DruidClientImpl implements DruidClient {
       new SelectQueryQueryToolChest(
         objectMapper,
         intervalChunkingQueryRunnerDecorator,
-        selectQueryConfigSupplier,
-        genericQueryMetricsFactory
+        selectQueryConfigSupplier
       );
 
     chestMap.put(SelectQuery.class, selectQueryQueryToolChest);

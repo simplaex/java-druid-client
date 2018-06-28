@@ -10,6 +10,7 @@ import io.druid.query.select.EventHolder;
 import io.druid.query.select.PagingSpec;
 import io.druid.query.select.SelectQuery;
 import io.druid.query.select.SelectResultValue;
+import io.druid.query.spec.MultipleIntervalSegmentSpec;
 import org.bouncycastle.util.io.Streams;
 import org.joda.time.Interval;
 import org.junit.*;
@@ -137,7 +138,7 @@ public class DruidClientTest {
     final SelectQuery query = new Druids.SelectQueryBuilder()
         .dataSource("player_explorer_s3")
         .dimensions(Collections.singletonList("deviceType"))
-        .intervals(Collections.singletonList(new Interval(from, to)))
+        .intervals(new MultipleIntervalSegmentSpec(Collections.singletonList(new Interval(from, to))))
         .pagingSpec(new PagingSpec(Collections.emptyMap(), 100))
         .build();
 
