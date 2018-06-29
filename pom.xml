@@ -11,7 +11,7 @@
   <description>A Druid Client for Java (mostly a thin wrapper around the existing one in druid-server)</description>
   <url>https://github.com/simplaex/java-druid-client</url>
 
-  <version>1.2.4</version>
+  <version>1.3.0</version>
   <packaging>jar</packaging>
 
   <scm>
