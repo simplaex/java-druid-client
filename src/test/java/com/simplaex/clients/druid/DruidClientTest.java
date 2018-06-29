@@ -1,11 +1,13 @@
 package com.simplaex.clients.druid;
 
-
 import io.druid.query.Druids;
 import io.druid.query.Result;
+import io.druid.query.filter.DimFilters;
 import io.druid.query.metadata.metadata.AllColumnIncluderator;
 import io.druid.query.metadata.metadata.SegmentAnalysis;
 import io.druid.query.metadata.metadata.SegmentMetadataQuery;
+import io.druid.query.scan.ScanQuery;
+import io.druid.query.scan.ScanResultValue;
 import io.druid.query.select.EventHolder;
 import io.druid.query.select.PagingSpec;
 import io.druid.query.select.SelectQuery;
@@ -15,6 +17,9 @@ import org.bouncycastle.util.io.Streams;
 import org.joda.time.Interval;
 import org.junit.*;
 import org.mockserver.integration.ClientAndServer;
+import org.mockserver.matchers.JsonStringMatcher;
+import org.mockserver.matchers.MatchType;
+import org.mockserver.matchers.Matcher;
 import org.mockserver.model.HttpRequest;
 import org.mockserver.model.HttpResponse;
 
@@ -138,7 +143,8 @@ public class DruidClientTest {
     final SelectQuery query = new Druids.SelectQueryBuilder()
         .dataSource("player_explorer_s3")
         .dimensions(Collections.singletonList("deviceType"))
-        .intervals(new MultipleIntervalSegmentSpec(Collections.singletonList(new Interval(from, to))))
+        .intervals(new MultipleIntervalSegmentSpec(
+                Collections.singletonList(new Interval(from, to))))
         .pagingSpec(new PagingSpec(Collections.emptyMap(), 100))
         .build();
 
@@ -169,4 +175,52 @@ public class DruidClientTest {
     );
   }
 
+  @Test
+  public void shouldExecuteAScanQuery() throws IOException {
+
+    setResponse(load("scan_query_response.json"));
+
+    final DruidClient client =
+        DruidClient.create("localhost", mockServer.getPort());
+
+    final long from = Instant.parse("2017-06-30T00:00:00Z").toEpochMilli();
+    final long to = Instant.parse("2020-10-02T00:00:00Z").toEpochMilli();
+
+    final ScanQuery query = new ScanQuery.ScanQueryBuilder()
+        .dataSource("player_explorer_s3")
+        .filters(DimFilters.dimEquals("version", "All"))
+        .resultFormat("compactList")
+        .columns(Arrays.asList("__time", "sessionCount", "deviceType"))
+        .intervals(new MultipleIntervalSegmentSpec(
+                Collections.singletonList(new Interval(from, to))))
+        .build();
+
+    final DruidResult<ScanResultValue> result = client.run(query);
+
+    // The http request body isn't marked as json, so can't use automatic json body matcher.
+    HttpRequest[] requests = mockServer.retrieveRecordedRequests(HttpRequest.request());
+    Assert.assertEquals("Single request should be recorded", 1, requests.length);
+    Matcher<String> jsonMatcher = new JsonStringMatcher(load("scan_query.json"), MatchType.ONLY_MATCHING_FIELDS);
+    String requestedJson = (String)requests[0].getBody().getValue();
+    Assert.assertTrue(
+            String.format("expected request json should match %s, but was %s", jsonMatcher, requestedJson),
+            jsonMatcher.matches(requestedJson));
+
+    final List<ScanResultValue> resultList = result.toList();
+
+    Assert.assertEquals("Number of results should be 11", 11, resultList.size());
+    ScanResultValue scanResult = resultList.get(10);
+
+    Assert.assertEquals("should have 3 columns", 3, scanResult.getColumns().size());
+    Assert.assertEquals(
+            "second columns should be sessionCount",
+            "sessionCount",
+            scanResult.getColumns().get(1));
+
+    final List<List<Object>> events = (List<List<Object>>) scanResult.getEvents();
+    Assert.assertEquals("should have 2 events", 2, events.size());
+
+    final List<Object> values = events.get(1);
+    Assert.assertEquals("the last event should have a sessionCount of 25", 25, values.get(1));
+  }
 }

@@ -25,6 +25,9 @@ import io.druid.query.groupby.strategy.GroupByStrategyV2;
 import io.druid.query.metadata.SegmentMetadataQueryConfig;
 import io.druid.query.metadata.SegmentMetadataQueryQueryToolChest;
 import io.druid.query.metadata.metadata.SegmentMetadataQuery;
+import io.druid.query.scan.ScanQuery;
+import io.druid.query.scan.ScanQueryConfig;
+import io.druid.query.scan.ScanQueryQueryToolChest;
 import io.druid.query.search.SearchQueryQueryToolChest;
 import io.druid.query.search.SearchQuery;
 import io.druid.query.search.SearchQueryConfig;
@@ -271,6 +274,19 @@ public final class DruidClientImpl implements DruidClient {
       );
 
     chestMap.put(TopNQuery.class, topNQueryQueryToolChest);
+
+
+    // scan queries
+
+    final ScanQueryConfig scanQueryConfig = new ScanQueryConfig();
+
+    final ScanQueryQueryToolChest scanToolChest =
+      new ScanQueryQueryToolChest(
+        scanQueryConfig,
+        genericQueryMetricsFactory
+      );
+
+    chestMap.put(ScanQuery.class, scanToolChest);
 
 
     return new MapQueryToolChestWarehouse(chestMap);
