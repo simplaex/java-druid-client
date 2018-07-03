@@ -1,7 +1,6 @@
 {
 "queryType": "scan",
 "filter": {"type": "selector", "dimension": "version", "value": "All"},
-"resultFormat": "compactList",
-"intervals":{"type":"intervals","intervals":["2017-06-30T00:00:00.000Z/2020-10-02T00:00:00.000Z"]},
+"resultFormat": "compactedList",
 "columns": ["__time", "sessionCount", "deviceType"]
 }

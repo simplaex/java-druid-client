@@ -189,7 +189,7 @@ public class DruidClientTest {
     final ScanQuery query = new ScanQuery.ScanQueryBuilder()
         .dataSource("player_explorer_s3")
         .filters(DimFilters.dimEquals("version", "All"))
-        .resultFormat("compactList")
+        .resultFormat(ScanQuery.RESULT_FORMAT_COMPACTED_LIST)
         .columns(Arrays.asList("__time", "sessionCount", "deviceType"))
         .intervals(new MultipleIntervalSegmentSpec(
                 Collections.singletonList(new Interval(from, to))))
@@ -217,6 +217,7 @@ public class DruidClientTest {
             "sessionCount",
             scanResult.getColumns().get(1));
 
+    @SuppressWarnings("unchecked")
     final List<List<Object>> events = (List<List<Object>>) scanResult.getEvents();
     Assert.assertEquals("should have 2 events", 2, events.size());
 
